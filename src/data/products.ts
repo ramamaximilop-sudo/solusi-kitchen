@@ -93,4 +93,15 @@ export const PRODUCTS: Product[] = [
     specs: { capacity: "630L", wattage: "730watt", dimension: "1900 x 950 x 830 mm", material: "High Quality },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-51ac9e88-10a5-41e0-a304-b96960f42af5.png"
   }
+       {
+    id: 8,
+    name: "GEA GLASS DOOR FREEZER VANDA-2500-SU",
+    brand: "GEA",
+    category: "Freezer",
+    subCategory: "Freezer",
+    price: 19008000,
+    description: "Tanyakn Langsung Menuju Whatsapp.",
+    specs: { capacity: "", wattage: "", dimension: "250x85x78", material: "High Quality },
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-24d769a1-b1a8-455e-88ae-f11b03733bda.png"
+  }
 ];
