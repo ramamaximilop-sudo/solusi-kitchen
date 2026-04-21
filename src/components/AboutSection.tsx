@@ -89,15 +89,12 @@ export const AboutSection = () => {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
-              <motion.img 
-                style={{ scale: 1.1, y: useTransform(scrollYProgress, [0, 1], ["0%", "10%"]) }}
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1000" 
-                alt="Expert Team" 
-                className="w-full h-full object-cover"
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute inset-0 bg-ske-blue/20"></div>
+            <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl bg-ske-bg">
+              <div 
+                style={{ backgroundImage: "url('https://images.unsplash.com/photo-1571175432247-41857920ab0b?q=80&w=2400&auto=format&fit=crop')" }}
+                className="absolute inset-0 w-full h-full bg-cover bg-center grayscale opacity-80"
+              ></div>
+              <div className="absolute inset-0 bg-ske-blue/40"></div>
               
               {/* Overlay Badge */}
               <div className="absolute bottom-10 left-10 right-10 bg-ske-emerald p-8 rounded-2xl shadow-2xl">

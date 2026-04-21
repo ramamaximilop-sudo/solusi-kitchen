@@ -122,19 +122,34 @@ const Hero = () => {
           </motion.div>
         </div>
         
-        <div className="hero-bg flex items-center justify-center p-12">
-          <div className="w-full h-full border-[12px] border-white shadow-2xl overflow-hidden relative group aspect-video md:aspect-auto min-h-[250px]">
+        <div className="hero-bg flex items-center justify-center p-6 md:p-12 bg-ske-bg">
+          <div className="w-full h-full border-[10px] md:border-[16px] border-white shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] overflow-hidden relative group aspect-video md:aspect-auto min-h-[300px]">
             <img 
-              src="https://images.unsplash.com/photo-1590620962723-de89e2236309?auto=format&fit=crop&q=80&w=1000" 
-              alt="Kitchen Equipment" 
-              className="absolute inset-0 w-full h-full object-cover opacity-20 grayscale group-hover:grayscale-0 transition-all duration-700"
+              src="https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-33eda0de-dfba-446e-9378-830aae8bdcbd.png" 
+              alt="GETRA Premium Series Vertical Cooler" 
+              className="absolute inset-0 w-full h-full object-cover object-center transition-premium group-hover:scale-105 duration-1000"
               referrerPolicy="no-referrer"
             />
-            <div className="absolute inset-0 bg-gradient-to-tr from-ske-dark to-transparent opacity-20"></div>
-            <div className="absolute bottom-4 left-4 text-white text-[10px] font-bold tracking-widest uppercase z-10">GEA/GETRA PREMIUM SERIES</div>
-            <div className="w-full h-full flex items-center justify-center text-gray-400 font-mono text-[8px] uppercase tracking-[0.5em] p-4 text-center">
-              Commercial Kitchen Showcase
+            
+            {/* Scrim for readability */}
+            <div className="absolute inset-0 bg-gradient-to-t from-ske-dark/40 via-transparent to-transparent opacity-60"></div>
+            
+            {/* Top Right Badge */}
+            <div className="absolute top-6 right-6 z-20">
+              <span className="bg-white px-3 py-1.5 text-[9px] font-black text-ske-emerald uppercase tracking-[0.2em] shadow-xl">
+                EST. 2019
+              </span>
             </div>
+
+            {/* Bottom Content Badges */}
+            <div className="absolute bottom-6 left-6 right-6 z-20 flex flex-col items-start gap-2">
+              <div className="bg-ske-emerald text-white text-[8px] md:text-[10px] font-black px-4 py-1 uppercase tracking-[0.3em] shadow-lg">
+                SKE WORKSHOP PREVIEW
+              </div>
+            </div>
+
+            {/* Subtle Overlay Pattern */}
+            <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
           </div>
         </div>
       </div>
@@ -174,14 +189,8 @@ const HowItWorks = () => {
             </div>
           </div>
 
-          <div className="relative w-full h-32 bg-gray-200 rounded flex items-center justify-center border border-gray-300 group cursor-pointer overflow-hidden">
-            <img 
-              src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&q=80&w=1000" 
-              alt="Workshop" 
-              className="absolute inset-0 w-full h-full object-cover grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-700"
-              referrerPolicy="no-referrer"
-            />
-            <div className="absolute inset-0 bg-black/10"></div>
+          <div className="relative w-full h-32 bg-ske-blue rounded flex items-center justify-center border border-ske-emerald/20 group cursor-pointer overflow-hidden">
+            <div className="absolute inset-0 bg-ske-emerald/5 group-hover:bg-ske-emerald/10 transition-colors duration-500"></div>
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-10 h-10 rounded-full border-2 border-ske-emerald flex items-center justify-center bg-white shadow-lg group-hover:scale-110 group-hover:shadow-ske-emerald/20 transition-premium z-10">
                 <div className="w-0 h-0 border-t-[6px] border-t-transparent border-l-[10px] border-l-ske-emerald border-b-[6px] border-b-transparent ml-1"></div>
