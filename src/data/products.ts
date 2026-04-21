@@ -18,14 +18,14 @@ export interface Product {
 export const PRODUCTS: Product[] = [
   {
     id: 1,
-    name: "Display Chiller EXPO-30P",
+    name: "GEA CHEST FREEZER AB-208-R",
     brand: "GEA",
-    category: "DISPLAY COOLER",
-    subCategory: "Chillers",
-    price: 8500000,
-    description: "Display chiller hemat energi dengan pintu kaca anti-embun. Cocok untuk memajang minuman dan buah-buahan dengan pencahayaan LED yang merata.",
-    specs: { capacity: "300 L", wattage: "180 W", dimension: "54 x 57 x 174 cm", material: "Painted Steel & Glass" },
-    image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=600"
+    category: "Freezer",
+    subCategory: "Freezer",
+    price: 0,
+    description: "Tanyakan Langsung Menuju Whatsapp.",
+    specs: { capacity: "100L", wattage: "180 W", dimension: "54 x 57 x 174 cm", material: "Painted Steel & Glass" },
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-e7f0f50c-88f9-4238-88f8-aedbc769b9a6.png"
   },
   {
     id: 2,
