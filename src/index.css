@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-ske-bg: #EBECF1;
+  --color-ske-dark: #1B1C25;
+  --color-ske-blue: #1F4068;
+  --color-ske-emerald: #206A5D;
+
+  --animate-premium: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@utility transition-premium {
+  transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@layer utilities {
+  .hero-bg {
+    background: linear-gradient(135deg, rgba(27, 28, 37, 0.1) 0%, rgba(31, 64, 104, 0.2) 100%), 
+                repeating-linear-gradient(45deg, #d1d5db 0px, #d1d5db 1px, transparent 1px, transparent 10px);
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 10px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #9ca3af;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-ske-bg text-ske-dark font-sans antialiased;
+  }
+}
