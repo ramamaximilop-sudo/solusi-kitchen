@@ -29,14 +29,14 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 2,
-    name: "Standard Upright Freezer",
-    brand: "RSA",
+    name: "GEA CHEST FREEZER AB-108-R",
+    brand: "GEA",
     category: "FREEZER",
-    subCategory: "Freezers",
-    price: 12400000,
-    description: "Freezer vertikal dengan sistem pendinginan statis. Dirancang untuk penyimpanan jangka panjang dengan rak yang dapat disesuaikan.",
-    specs: { capacity: "500 L", wattage: "250 W", dimension: "68 x 70 x 190 cm", material: "Galvanized Steel" },
-    image: "https://images.unsplash.com/photo-1571175432247-41857920ab0b?auto=format&fit=crop&q=80&w=600"
+    subCategory: "Freezer",
+    price: 0,
+    description: "Tanyakan Langsung Menuju Whatasapp.",
+    specs: { capacity: "100 L", wattage: "94 W", dimension: "54,6x47,9x84,5 cm", material: "Galvanized Steel" },
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-02bcec2d-b65c-4831-a4fb-732faecb4f29.png"
   },
   {
     id: 3,
