@@ -595,10 +595,31 @@ export const ProductCatalog = () => {
                     </div>
                   </div>
                 ) : (
-                  <motion.div 
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    className="py-16 flex flex-col items-center text-center"
-                  >
-                    <div className="w-20 h-20 bg-ske-emerald/10 rounded-full flex items-center justify-center mb-6">
-                      <CheckCircle size={40} 
+                 <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            className="py-16 flex flex-col items-center text-center"
+          >
+            <div className="w-20 h-20 bg-ske-emerald/10 rounded-full flex items-center justify-center mb-6">
+              <CheckCircle size={40} />
+            </div>
+            <h2 className="text-2xl font-black text-ske-dark mb-2 uppercase tracking-tighter">
+              Permintaan Terkirim
+            </h2>
+            <p className="text-ske-gray max-w-xs mb-8">
+              Terima kasih! Permintaan informasi Anda telah kami terima dan akan segera diproses oleh tim kami.
+            </p>
+            <button
+              onClick={() => setShowInquiryModal(false)}
+              className="bg-ske-dark text-white px-8 py-3 font-black uppercase tracking-widest text-[10px]"
+            >
+              Kembali ke Katalog
+            </button>
+          </motion.div>
+        )}
+      </motion.div>
+    </div>
+  );
+};
+
+export default ProductCatalog;
