@@ -612,13 +612,13 @@ export const ProductCatalog = () => {
               onClick={() => setShowInquiryModal(false)}
               className="bg-ske-dark text-white px-8 py-3 font-black uppercase tracking-widest text-[10px] hover:bg-opacity-90 transition-all"
             >
-              Kembali ke Katalog
-            </button>
+             Kembali ke Katalog
+                </button>
+              </motion.div>
+            )}
           </motion.div>
-        )}
-      </motion.div>
-    </div>
-  );
-};
+        </div>
+      );
+    };
 
 export default ProductCatalog;
