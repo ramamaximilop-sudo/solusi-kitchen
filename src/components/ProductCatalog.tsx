@@ -614,7 +614,6 @@ export const ProductCatalog = () => {
             >
              Kembali ke Katalog
                 </button>
-              </motion.div>
             )}
           </motion.div>
         </div>
