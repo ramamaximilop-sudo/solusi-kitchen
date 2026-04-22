@@ -46,7 +46,7 @@ export const PRODUCTS: Product[] = [
     subCategory: "FREEZER",
     price: 0,
     description: "Tanyakan Langsung Menuju Whatsapp.",
-    specs: { capacity: "303 L", wattage: "330 W", dimension: "0", material: "High-Grade " },
+    specs: { capacity: "303 L", wattage: "330 W", dimension: "0", material: "High-Grade" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-d383f41d-647a-4c9b-8f0f-9bfe6c445a19.png"
   },
   {
@@ -79,7 +79,7 @@ export const PRODUCTS: Product[] = [
     subCategory: "FREEZER",
     price: 0,
     description: "Tanyakan Langsung Menuju Whatsapp.",
-    specs: { capacity: "", wattage: "150 W", dimension: "50 x 50 x 100 cm", material: "High Quality },
+    specs: { capacity: "", wattage: "150 W", dimension: "50 x 50 x 100 cm", material: "High Quality" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-2ed9bb8b-7a35-4db6-97ce-c3274b886111.png"
   },
   {
@@ -90,7 +90,7 @@ export const PRODUCTS: Product[] = [
     subCategory: "Freezer",
     price: 19008000,
     description: "Tanyakn Langsung Menuju Whatsapp.",
-    specs: { capacity: "630L", wattage: "730watt", dimension: "1900 x 950 x 830 mm", material: "High Quality },
+    specs: { capacity: "630L", wattage: "730watt", dimension: "1900 x 950 x 830 mm", material: "High Quality" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-51ac9e88-10a5-41e0-a304-b96960f42af5.png"
   },
    {
@@ -101,7 +101,7 @@ export const PRODUCTS: Product[] = [
     subCategory: "Freezer",
     price: 19008000,
     description: "Tanyakn Langsung Menuju Whatsapp.",
-    specs: { capacity: "", wattage: "", dimension: "250x85x78", material: "High Quality },
+    specs: { capacity: "", wattage: "", dimension: "250x85x78", material: "High Quality" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-24d769a1-b1a8-455e-88ae-f11b03733bda.png"
   },
    {
@@ -112,7 +112,7 @@ export const PRODUCTS: Product[] = [
     subCategory: "Freezer",
     price: 22968000,
     description: "Tanyakn Langsung Menuju Whatsapp.",
-    specs: { capacity: "", wattage: "", dimension: "210x85x78", material: "High Quality },
+    specs: { capacity: "", wattage: "", dimension: "210x85x78", material: "High Quality" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-24d769a1-b1a8-455e-88ae-f11b03733bda.png" 
            },
    {
@@ -123,7 +123,7 @@ export const PRODUCTS: Product[] = [
     subCategory: "Freezer",
     price: 22968000,
     description: "Tanyakn Langsung Menuju Whatsapp.",
-    specs: { capacity: "", wattage: "", dimension: "0", material: "High Quality },
+    specs: { capacity: "", wattage: "", dimension: "0", material: "High Quality" },
     image: "   https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-a0d6820f-4531-4688-87e5-d2fe0dfa6136.png"
            },
    {
@@ -134,7 +134,7 @@ export const PRODUCTS: Product[] = [
     subCategory: "Freezer",
     price: 22572000,
     description: "Tanyakn Langsung Menuju Whatsapp.",
-    specs: { capacity: "", wattage: "", dimension: "200x89x95", material: "High Quality },
+    specs: { capacity: "", wattage: "", dimension: "200x89x95", material: "High Quality" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-ca77dc0f-723b-41e4-80b4-8ddb80657435.png"
            },
    {
@@ -145,7 +145,7 @@ export const PRODUCTS: Product[] = [
     subCategory: "Freezer",
     price: 18216000,
     description: "Tanyakn Langsung Menuju Whatsapp.",
-    specs: { capacity: "", wattage: "", dimension: "150x89x95", material: "High Quality },
+    specs: { capacity: "", wattage: "", dimension: "150x89x95", material: "High Quality" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-77142ab0-e0a6-4d1b-90fc-26f570ee4ec4.png"
            },
     {
@@ -156,7 +156,7 @@ export const PRODUCTS: Product[] = [
     subCategory: "Freezer",
     price: 11880000,
     description: "Tanyakn Langsung Menuju Whatsapp.",
-    specs: { capacity: "", wattage: "", dimension: "200x75,7x81,8", material: "High Quality },
+    specs: { capacity: "", wattage: "", dimension: "200x75,7x81,8", material: "High Quality" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-1524d016-3085-4548-bf2e-169353daea20.png"
            },
      {
@@ -167,7 +167,7 @@ export const PRODUCTS: Product[] = [
     subCategory: "Freezer",
     price: 7920000,
     description: "Tanyakn Langsung Menuju Whatsapp.",
-    specs: { capacity: "", wattage: "", dimension: "147,5x75,7x81,8", material: "High Quality },
+    specs: { capacity: "", wattage: "", dimension: "147,5x75,7x81,8", material: "High Quality" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-14b54357-8add-461f-9073-87b8205430a9.png"
            },
     {
@@ -178,7 +178,7 @@ export const PRODUCTS: Product[] = [
     subCategory: "Freezer",
     price: 5623200,
     description: "Tanyakn Langsung Menuju Whatsapp.",
-    specs: { capacity: "", wattage: "", dimension: "126x70,5x87,5", material: "High Quality },
+    specs: { capacity: "", wattage: "", dimension: "126x70,5x87,5", material: "High Quality" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-44cb8f10-2d4b-41a1-add3-074272195026.png"
            },
          {
@@ -189,7 +189,7 @@ export const PRODUCTS: Product[] = [
     subCategory: "Freezer",
     price: 4831200,
     description: "Tanyakn Langsung Menuju Whatsapp.",
-    specs: { capacity: "", wattage: "", dimension: "99x70,5x87,5", material: "High Quality },
+    specs: { capacity: "", wattage: "", dimension: "99x70,5x87,5", material: "High Quality" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-44cb8f10-2d4b-41a1-add3-074272195026.png"
            },
             {
@@ -200,7 +200,7 @@ export const PRODUCTS: Product[] = [
     subCategory: "Freezer",
     price: 4506000,
     description: "Tanyakn Langsung Menuju Whatsapp.",
-    specs: { capacity: "", wattage: "", dimension: "99x70,5x87,5", material: "High Quality },
+    specs: { capacity: "", wattage: "", dimension: "99x70,5x87,5", material: "High Quality" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-3aa0758f-9d60-4ff7-9161-ad3232ce047e.png"
            },
      {
@@ -211,7 +211,7 @@ export const PRODUCTS: Product[] = [
     subCategory: "Freezer",
     price: 22572000,
     description: "Tanyakn Langsung Menuju Whatsapp.",
-    specs: { capacity: "", wattage: "", dimension: "253,6x93,6x86", material: "High Quality },
+    specs: { capacity: "", wattage: "", dimension: "253,6x93,6x86", material: "High Quality" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-0760d8ea-8615-4e18-b88a-aef6c17df513.png"
            },
      {
@@ -222,7 +222,7 @@ export const PRODUCTS: Product[] = [
     subCategory: "Freezer",
     price: 18216000,
     description: "Tanyakn Langsung Menuju Whatsapp.",
-    specs: { capacity: "", wattage: "", dimension: "203,6x93,6x866", material: "High Quality },
+    specs: { capacity: "", wattage: "", dimension: "203,6x93,6x866", material: "High Quality" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-bba7c200-167f-4257-a402-4e5672cbb2a2.png"
            },
     {
@@ -233,7 +233,7 @@ export const PRODUCTS: Product[] = [
     subCategory: "Freezer",
     price: 10692000,
     description: "Tanyakn Langsung Menuju Whatsapp.",
-    specs: { capacity: "", wattage: "", dimension: "188x82x88", material: "High Quality },
+    specs: { capacity: "", wattage: "", dimension: "188x82x88", material: "High Quality" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-75fb7644-d014-45cf-a9a3-81856fea076f.png"
            },
     {
@@ -244,7 +244,7 @@ export const PRODUCTS: Product[] = [
     subCategory: "Freezer",
     price: 7920000,
     description: "Tanyakn Langsung Menuju Whatsapp.",
-    specs: { capacity: "", wattage: "", dimension: "152x75,7x88, material: "High Quality },
+    specs: { capacity: "", wattage: "", dimension: "152x75,7x88, material: "High Quality" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-f29f35ae-3147-435a-8d54-8a06f7b8550d.png"
   },
    {
@@ -255,7 +255,7 @@ export const PRODUCTS: Product[] = [
     subCategory: "Freezer",
     price: 4110000,
     description: "Tanyakn Langsung Menuju Whatsapp.",
-    specs: { capacity: "", wattage: "", dimension: "107x60x85", material: "High Quality },
+    specs: { capacity: "", wattage: "", dimension: "107x60x85", material: "High Quality" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-9628aba2-bb4f-4553-9a0d-7d299421ef0d.png"
            },
      {
@@ -266,7 +266,7 @@ export const PRODUCTS: Product[] = [
     subCategory: "Freezer",
     price: 3476400,
     description: "Tanyakn Langsung Menuju Whatsapp.",
-    specs: { capacity: "", wattage: "", dimension: "93x54x85", material: "High Quality },
+    specs: { capacity: "", wattage: "", dimension: "93x54x85", material: "High Quality" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-2374d24d-5ecd-4de9-a907-0e6f41e27dbb.png"
            },
      {
@@ -277,7 +277,7 @@ export const PRODUCTS: Product[] = [
     subCategory: "Freezer",
     price:  3318000,
     description: "Tanyakn Langsung Menuju Whatsapp.",
-    specs: { capacity: "", wattage: "", dimension: "73,5x54x925", material: "High Quality },
+    specs: { capacity: "", wattage: "", dimension: "73,5x54x925", material: "High Quality" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-073a04d8-65d6-47b2-9840-7ceb1fc8167b.png"
            },
   {
@@ -288,7 +288,7 @@ export const PRODUCTS: Product[] = [
     subCategory: "Freezer",
     price:   2367600,
     description: "Tanyakn Langsung Menuju Whatsapp.",
-    specs: { capacity: "", wattage: "", dimension: "73,5x54x925", material: "High Quality },
+    specs: { capacity: "", wattage: "", dimension: "73,5x54x925", material: "High Quality" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-c381af62-7023-40fe-840e-920f713785a7.png"
            },
       {
@@ -299,7 +299,7 @@ export const PRODUCTS: Product[] = [
     subCategory: "Freezer",
     price:   2842800,
     description: "Tanyakn Langsung Menuju Whatsapp.",
-    specs: { capacity: "", wattage: "", dimension: "63x58x84", material: "High Quality },
+    specs: { capacity: "", wattage: "", dimension: "63x58x84", material: "High Quality" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-99308e78-c15c-427d-b9d3-4641d0959895.png"
            },
      {
@@ -310,7 +310,7 @@ export const PRODUCTS: Product[] = [
     subCategory: "Freezer",
     price:   0,
     description: "Tanyakn Langsung Menuju Whatsapp.",
-    specs: { capacity: "1000liter", wattage: "1050watt", dimension: "120x76x200cm", material: "High Quality },
+    specs: { capacity: "1000liter", wattage: "1050watt", dimension: "120x76x200cm", material: "High Quality" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-b8612cb4-5689-42b2-9dfb-63e3a7620189.png"
            },
      {
@@ -321,7 +321,7 @@ export const PRODUCTS: Product[] = [
     subCategory: "Freezer",
     price:   0,
     description: "Tanyakn Langsung Menuju Whatsapp.",
-    specs: { capacity: "340liter", wattage: "700watt", dimension: "60x76x200 cm", material: "High Quality },
+    specs: { capacity: "340liter", wattage: "700watt", dimension: "60x76x200 cm", material: "High Quality" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-a44a2bfe-2a96-49d9-8028-4aee88a7d135.png"
    },
   {
@@ -332,7 +332,7 @@ export const PRODUCTS: Product[] = [
     subCategory: "Freezer",
     price:   0,
     description: "Tanyakn Langsung Menuju Whatsapp.",
-    specs: { capacity: "", wattage: "", dimension: "67x66,6x195,7", material: "High Quality },
+    specs: { capacity: "", wattage: "", dimension: "67x66,6x195,7", material: "High Quality" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-a7259d39-5936-4a97-8058-ef99bee0fb33.png"
            },
      
@@ -344,10 +344,7 @@ export const PRODUCTS: Product[] = [
     subCategory: "Freezer",
     price:   0,
     description: "Tanyakn Langsung Menuju Whatsapp.",
-    specs: { capacity: "", wattage: "", dimension: "60x53x84,5", material: "High Quality },
+    specs: { capacity: "", wattage: "", dimension: "60x53x84,5", material: "High Quality" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-f7b7f4fc-630e-441d-b956-80ad88aec800.png"
            },
-     
-     
-    
   ];
