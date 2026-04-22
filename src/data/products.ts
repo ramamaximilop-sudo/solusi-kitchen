@@ -445,7 +445,7 @@ export const PRODUCTS: Product[] = [
     description: "Tanyakn Langsung Menuju Whatsapp.",
     specs: { capacity: "", wattage: "", dimension: "156x65x88", material: "High Quality" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-6b373237-62c2-4b1c-8311-867ff693cec4.png"
-}
+},
 {
  id: 39,
     name: "GEA CHEST FREEZER AB-396-T-X",
@@ -456,7 +456,7 @@ export const PRODUCTS: Product[] = [
     description: "Tanyakn Langsung Menuju Whatsapp.",
     specs: { capacity: "", wattage: "", dimension: "128x65x88", material: "High Quality" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-267c2814-93f8-446c-9475-3d644c571816.png"
-}
+},
 {
    id: 40,
     name: "GEA CHEST FREEZER AB-336-R",
@@ -467,7 +467,7 @@ export const PRODUCTS: Product[] = [
     description: "Tanyakn Langsung Menuju Whatsapp.",
     specs: { capacity: "", wattage: "", dimension: "112,5x68,5x85,5", material: "High Quality" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-2304cb26-a12a-48d2-8865-79d57e6b9e04.png"
-}
+},
 {
   id: 41,
     name: "GEA CHEST FREEZER AB-226-R",
@@ -478,7 +478,7 @@ export const PRODUCTS: Product[] = [
     description: "Tanyakn Langsung Menuju Whatsapp.",
     specs: { capacity: "", wattage: "", dimension: "", material: "High Quality" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-06c60fc2-5766-4d86-b95c-0e9ec7052f16.png"
-}
+},
 {
   id: 41,
     name: "GEA CHEST FREEZER AB-106-R",
