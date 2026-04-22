@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from "motion/react";
-import { Shield, Settings, ChevronRight, Filter, ChevronDown, ExternalLink, X, CheckCircle } from "lucide-react";
+import { Shield, Settings, ChevronRight, Filter, ChevronDown, ExternalLink, X, CheckCircle, Search } from "lucide-react";
 import { useState, useMemo, ReactNode, useEffect, useRef } from "react";
 import { Product, PRODUCTS } from "../data/products.ts";
 
@@ -38,15 +38,16 @@ const FilterSection = ({ title, children, maxHeight }: { title: string; children
 export const ProductCatalog = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
   const [selectedBrand, setSelectedBrand] = useState<string>("All");
+  const [searchQuery, setSearchQuery] = useState<string>("");
   const [currentPage, setCurrentPage] = useState(1);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   
   const catalogTopRef = useRef<HTMLDivElement>(null);
   
-  // Reset page when filters change
+  // Reset page when filters or search change
   useEffect(() => {
     setCurrentPage(1);
-  }, [selectedCategory, selectedBrand]);
+  }, [selectedCategory, selectedBrand, searchQuery]);
 
   // Handle page change with smooth scroll
   const handlePageChange = (page: number) => {
@@ -113,9 +114,13 @@ export const ProductCatalog = () => {
     return PRODUCTS.filter(p => {
       const catMatch = selectedCategory === "All" || p.category === selectedCategory;
       const brandMatch = selectedBrand === "All" || p.brand === selectedBrand;
-      return catMatch && brandMatch;
+      const searchMatch = searchQuery === "" || 
+        p.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
+        p.brand.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        p.category.toLowerCase().includes(searchQuery.toLowerCase());
+      return catMatch && brandMatch && searchMatch;
     });
-  }, [selectedCategory, selectedBrand]);
+  }, [selectedCategory, selectedBrand, searchQuery]);
 
   const totalPages = Math.ceil(filteredProducts.length / ITEMS_PER_PAGE);
   const paginatedProducts = useMemo(() => {
@@ -153,14 +158,27 @@ export const ProductCatalog = () => {
   return (
     <div className="pt-24 md:pt-32 bg-ske-bg min-h-screen">
       <div className="max-w-7xl mx-auto px-6 md:px-10 py-12">
-        <header className="mb-12">
-          <div className="flex space-x-2 items-center mb-4">
-            <div className="w-12 h-[2px] bg-ske-emerald"></div>
-            <span className="text-[9px] font-bold uppercase tracking-[0.3em] text-ske-blue">SKE Professional Catalog</span>
+        <header className="mb-12 flex flex-col md:flex-row md:items-end md:justify-between gap-8">
+          <div>
+            <div className="flex space-x-2 items-center mb-4">
+              <div className="w-12 h-[2px] bg-ske-emerald"></div>
+              <span className="text-[9px] font-bold uppercase tracking-[0.3em] text-ske-blue">SKE Professional Catalog</span>
+            </div>
+            <h1 className="text-3xl md:text-5xl font-black text-ske-dark uppercase leading-none tracking-tight">
+              Marketplace Peralatan<br />Dapur Industrial
+            </h1>
           </div>
-          <h1 className="text-3xl md:text-5xl font-black text-ske-dark uppercase leading-none tracking-tight">
-            Marketplace Peralatan<br />Dapur Industrial
-          </h1>
+          
+          <div className="relative w-full max-w-md group">
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-ske-blue/30 group-focus-within:text-ske-emerald transition-colors" size={18} />
+            <input 
+              type="text" 
+              placeholder="Cari produk (Nama, Brand, Kategori)..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-full bg-white border border-gray-200 py-4 pl-12 pr-4 text-xs font-bold text-ske-dark outline-none focus:border-ske-emerald transition-premium placeholder:text-ske-blue/20"
+            />
+          </div>
         </header>
 
         {/* Mobile Filter Chips & Drawer */}
@@ -413,13 +431,14 @@ export const ProductCatalog = () => {
             {/* Pagination Controls */}
             {totalPages > 1 && (
               <div className="mt-20 flex flex-col items-center gap-8 border-t border-gray-200 pt-10">
-                <div className="flex items-center gap-3">
+                <div className="flex flex-wrap justify-center items-center gap-4">
                   <button
                     onClick={() => handlePageChange(currentPage - 1)}
                     disabled={currentPage === 1}
-                    className="p-3 border border-gray-200 text-ske-blue disabled:opacity-30 disabled:cursor-not-allowed hover:border-ske-emerald hover:text-ske-emerald transition-colors"
+                    className="flex items-center gap-2 px-5 py-3 border border-gray-200 text-[10px] font-black uppercase tracking-widest text-ske-blue disabled:opacity-30 disabled:cursor-not-allowed hover:border-ske-emerald hover:text-ske-emerald transition-premium"
                   >
-                    <ChevronDown size={18} className="rotate-90" />
+                    <ChevronDown size={14} className="rotate-90" />
+                    Previous
                   </button>
                   
                   <div className="flex items-center gap-1">
@@ -441,9 +460,10 @@ export const ProductCatalog = () => {
                   <button
                     onClick={() => handlePageChange(currentPage + 1)}
                     disabled={currentPage === totalPages}
-                    className="p-3 border border-gray-200 text-ske-blue disabled:opacity-30 disabled:cursor-not-allowed hover:border-ske-emerald hover:text-ske-emerald transition-colors"
+                    className="flex items-center gap-2 px-5 py-3 border border-gray-200 text-[10px] font-black uppercase tracking-widest text-ske-blue disabled:opacity-30 disabled:cursor-not-allowed hover:border-ske-emerald hover:text-ske-emerald transition-premium"
                   >
-                    <ChevronDown size={18} className="-rotate-90" />
+                    Next
+                    <ChevronDown size={14} className="-rotate-90" />
                   </button>
                 </div>
                 <div className="text-[9px] font-bold text-ske-blue/30 uppercase tracking-[0.2em]">
