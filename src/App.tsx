@@ -355,7 +355,7 @@ const HomePage = () => (
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/solusi-kitchen">
       <ScrollToTop />
       <div className="selection:bg-ske-emerald selection:text-white overflow-x-hidden min-h-screen flex flex-col">
         <Navbar />
@@ -370,6 +370,6 @@ export default function App() {
         <Footer />
         <WhatsAppFloat />
       </div>
-    </Router>
+  <Router basename="/solusi-kitchen">
   );
 }
