@@ -43,7 +43,7 @@ export const ProductCatalog = () => {
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   
   const catalogTopRef = useRef<HTMLDivElement>(null);
-  
+
   // Reset page when filters or search change
   useEffect(() => {
     setCurrentPage(1);
@@ -122,11 +122,34 @@ export const ProductCatalog = () => {
     });
   }, [selectedCategory, selectedBrand, searchQuery]);
 
-  const totalPages = Math.ceil(filteredProducts.length / ITEMS_PER_PAGE);
+  // Derive total pages after filteredProducts
+  const totalPages = useMemo(() => Math.ceil(filteredProducts.length / ITEMS_PER_PAGE), [filteredProducts]);
+  
+  // Clamp currentPage to valid bounds whenever it or totalPages changes
+  const effectivePage = useMemo(() => {
+    if (totalPages === 0) return 1;
+    return Math.max(1, Math.min(currentPage, totalPages));
+  }, [currentPage, totalPages]);
+  
+  // Sync effectivePage back to state if it was clamped (to keep UI in sync)
+  useEffect(() => {
+    if (currentPage !== effectivePage) {
+      setCurrentPage(effectivePage);
+    }
+  }, [effectivePage, currentPage]);
+
   const paginatedProducts = useMemo(() => {
-    const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
-    return filteredProducts.slice(startIndex, startIndex + ITEMS_PER_PAGE);
-  }, [filteredProducts, currentPage]);
+    // We use effectivePage here for the slice calculation to ensure 
+    // it always reflects the most current validated state
+    const startIndex = (effectivePage - 1) * ITEMS_PER_PAGE;
+    const slice = filteredProducts.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+    
+    // Safety check: ensure no accidental duplicates within the slice itself
+    // (Though unlikely with .slice, this prevents state poisoning)
+    return Array.from(new Set(slice.map(p => p.id)))
+      .map(id => slice.find(p => p.id === id))
+      .filter((p): p is Product => p !== undefined);
+  }, [filteredProducts, effectivePage]);
 
   const handleInquiryRequest = (product: Product) => {
     setActiveProduct(product);
@@ -350,17 +373,21 @@ export const ProductCatalog = () => {
                </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
-              <AnimatePresence mode="popLayout">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 min-h-[400px]">
+              <AnimatePresence mode="popLayout" initial={false}>
                 {paginatedProducts.map((product) => (
                   <motion.div
                     layout
-                    key={product.id}
+                    key={`${effectivePage}-${product.id}`}
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 0.9 }}
                     whileHover={{ y: -8, shadow: "0 25px 50px -12px rgba(27, 28, 37, 0.15)" }}
-                    transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
+                    transition={{ 
+                      duration: 0.3,
+                      layout: { duration: 0.3 },
+                      opacity: { duration: 0.2 }
+                    }}
                     className="bg-white border border-gray-200 flex flex-col group relative transition-premium"
                   >
                     {/* Brand Badge */}
