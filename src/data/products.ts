@@ -390,7 +390,7 @@ export const PRODUCTS: Product[] = [
     description: "Tanyakn Langsung Menuju Whatsapp.",
     specs: { capacity: "", wattage: "", dimension: "", material: "High Quality" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-56763e5c-2216-4c4f-b20f-484b95a253b4.png"
-  }
+  },
   {
   id: 34,
     name: "GEA CHEST FREEZER AB-1200-T-X",
