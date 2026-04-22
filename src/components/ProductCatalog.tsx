@@ -587,15 +587,14 @@ export const ProductCatalog = () => {
                       </p>
                       <button 
                         onClick={handleWhatsAppInquiry}
-                        disabled={!formData.name || !formData.address}
-                        className="w-full bg-[#206A5D] text-white py-4 text-[11px] font-black uppercase tracking-[0.2em] hover:shadow-[0_0_20px_rgba(32,106,93,0.3)] hover:brightness-110 transition-premium flex items-center justify-center gap-2 shadow-lg disabled:opacity-50 disabled:grayscale disabled:cursor-not-allowed"
-                      >
-                        <MessageIcon /> Hubungi WhatsApp
-                      </button>
-                    </div>
-                  </div>
-                ) : (
-                 </motion.div>
+<button
+              onClick={handleWhatsAppInquiry}
+              disabled={!formData.name || !formData.address}
+              className="w-full bg-[#206A5D] text-white py-4 text-[11px] font-black uppercase tracking-[0.2em] flex items-center justify-center gap-3 hover:bg-opacity-90 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              <MessageIcon /> Hubungi WhatsApp
+            </button>
+          </div>
         ) : (
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -608,12 +607,12 @@ export const ProductCatalog = () => {
             <h2 className="text-2xl font-black text-ske-dark mb-2 uppercase tracking-tighter">
               Permintaan Terkirim
             </h2>
-            <p className="text-ske-gray max-w-xs mb-8">
+            <p className="text-ske-gray max-w-xs mb-8 text-xs leading-relaxed">
               Terima kasih! Permintaan informasi Anda telah kami terima dan akan segera diproses oleh tim kami.
             </p>
             <button
               onClick={() => setShowInquiryModal(false)}
-              className="bg-ske-dark text-white px-8 py-3 font-black uppercase tracking-widest text-[10px]"
+              className="bg-ske-dark text-white px-8 py-3 font-black uppercase tracking-widest text-[10px] hover:bg-opacity-90 transition-all"
             >
               Kembali ke Katalog
             </button>
