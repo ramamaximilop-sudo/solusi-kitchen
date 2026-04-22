@@ -1,7 +1,9 @@
 import { motion, AnimatePresence } from "motion/react";
 import { Shield, Settings, ChevronRight, Filter, ChevronDown, ExternalLink, X, CheckCircle } from "lucide-react";
-import { useState, useMemo, ReactNode } from "react";
+import { useState, useMemo, ReactNode, useEffect, useRef } from "react";
 import { Product, PRODUCTS } from "../data/products.ts";
+
+const ITEMS_PER_PAGE = 12;
 
 const FilterSection = ({ title, children, maxHeight }: { title: string; children: ReactNode; maxHeight?: string }) => {
   const [isOpen, setIsOpen] = useState(true);
@@ -36,7 +38,21 @@ const FilterSection = ({ title, children, maxHeight }: { title: string; children
 export const ProductCatalog = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
   const [selectedBrand, setSelectedBrand] = useState<string>("All");
+  const [currentPage, setCurrentPage] = useState(1);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
+  
+  const catalogTopRef = useRef<HTMLDivElement>(null);
+  
+  // Reset page when filters change
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [selectedCategory, selectedBrand]);
+
+  // Handle page change with smooth scroll
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+    catalogTopRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
   
   // Inquiry Modal State
   const [isInquiryModalOpen, setIsInquiryModalOpen] = useState(false);
@@ -100,6 +116,12 @@ export const ProductCatalog = () => {
       return catMatch && brandMatch;
     });
   }, [selectedCategory, selectedBrand]);
+
+  const totalPages = Math.ceil(filteredProducts.length / ITEMS_PER_PAGE);
+  const paginatedProducts = useMemo(() => {
+    const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+    return filteredProducts.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+  }, [filteredProducts, currentPage]);
 
   const handleInquiryRequest = (product: Product) => {
     setActiveProduct(product);
@@ -302,9 +324,9 @@ export const ProductCatalog = () => {
           </aside>
 
           {/* Main Content Area */}
-          <main className="lg:col-span-3">
+          <main className="lg:col-span-3" ref={catalogTopRef}>
             <div className="hidden lg:flex justify-between items-center mb-8 border-b border-gray-300 pb-4">
-               <span className="text-[10px] font-bold text-ske-blue/40 uppercase tracking-[0.2em]">Showing {filteredProducts.length} Results</span>
+               <span className="text-[10px] font-bold text-ske-blue/40 uppercase tracking-[0.2em]">Showing {paginatedProducts.length} of {filteredProducts.length} Results</span>
                <div className="text-[10px] font-bold text-ske-blue uppercase tracking-widest cursor-pointer hover:text-ske-emerald transition-colors flex items-center gap-1 group">
                  Sort By: Newest <ChevronDown size={10} className="group-hover:translate-y-0.5 transition-transform" />
                </div>
@@ -312,7 +334,7 @@ export const ProductCatalog = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
               <AnimatePresence mode="popLayout">
-                {filteredProducts.map((product) => (
+                {paginatedProducts.map((product) => (
                   <motion.div
                     layout
                     key={product.id}
@@ -387,6 +409,48 @@ export const ProductCatalog = () => {
                 ))}
               </AnimatePresence>
             </div>
+
+            {/* Pagination Controls */}
+            {totalPages > 1 && (
+              <div className="mt-20 flex flex-col items-center gap-8 border-t border-gray-200 pt-10">
+                <div className="flex items-center gap-3">
+                  <button
+                    onClick={() => handlePageChange(currentPage - 1)}
+                    disabled={currentPage === 1}
+                    className="p-3 border border-gray-200 text-ske-blue disabled:opacity-30 disabled:cursor-not-allowed hover:border-ske-emerald hover:text-ske-emerald transition-colors"
+                  >
+                    <ChevronDown size={18} className="rotate-90" />
+                  </button>
+                  
+                  <div className="flex items-center gap-1">
+                    {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+                      <button
+                        key={page}
+                        onClick={() => handlePageChange(page)}
+                        className={`w-10 h-10 text-[10px] font-black uppercase tracking-widest transition-premium ${
+                          currentPage === page 
+                            ? 'bg-ske-emerald text-white shadow-lg' 
+                            : 'bg-white text-ske-blue border border-gray-200 hover:border-ske-emerald hover:text-ske-emerald'
+                        }`}
+                      >
+                        {page}
+                      </button>
+                    ))}
+                  </div>
+
+                  <button
+                    onClick={() => handlePageChange(currentPage + 1)}
+                    disabled={currentPage === totalPages}
+                    className="p-3 border border-gray-200 text-ske-blue disabled:opacity-30 disabled:cursor-not-allowed hover:border-ske-emerald hover:text-ske-emerald transition-colors"
+                  >
+                    <ChevronDown size={18} className="-rotate-90" />
+                  </button>
+                </div>
+                <div className="text-[9px] font-bold text-ske-blue/30 uppercase tracking-[0.2em]">
+                  Page {currentPage} of {totalPages}
+                </div>
+              </div>
+            )}
 
             {filteredProducts.length === 0 && (
               <div className="flex flex-col items-center justify-center py-32 text-center">
