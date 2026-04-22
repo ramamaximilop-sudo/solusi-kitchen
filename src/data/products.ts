@@ -232,29 +232,29 @@ export const PRODUCTS: Product[] = [
     category: "Freezer",
     subCategory: "Freezer",
     price: 10692000,
-    description: "Tanyakn Langsung Menuju Whatsapp.",
+  description: "Tanyakan Langsung Menuju Whatsapp.",
     specs: { capacity: "", wattage: "", dimension: "188x82x88", material: "High Quality" },
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-75fb7644-d014-45cf-a9a3-81856fea076f.png"
-           },
-    {
+    image: "https://yerutlqkfjicrfgsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-75fb7644-d014-45cf-a9a3-81856fea076f.png"
+  },
+  {
     id: 21,
     name: "GEA SLIDING FLAT GLASS FREEZER SD-406BP",
     brand: "GEA",
     category: "Freezer",
     subCategory: "Freezer",
     price: 7920000,
-    description: "Tanyakn Langsung Menuju Whatsapp.",
-    specs: { capacity: "", wattage: "", dimension: "152x75,7x88, material: "High Quality" },
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-f29f35ae-3147-435a-8d54-8a06f7b8550d.png"
+    description: "Tanyakan Langsung Menuju Whatsapp.",
+    specs: { capacity: "", wattage: "", dimension: "152x75,7x88", material: "High Quality" },
+    image: "https://yerutlqkfjicrfgsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-f29f35ae-3147-435a-8d54-8a06f7b8558d.png"
   },
-   {
+  {
     id: 22,
     name: "GEA SLIDING FLAT GLASS FREEZER SD-256",
     brand: "GEA",
     category: "Freezer",
     subCategory: "Freezer",
     price: 4110000,
-    description: "Tanyakn Langsung Menuju Whatsapp.",
+    description: "Tanyakan Langsung Menuju Whatsapp.",
     specs: { capacity: "", wattage: "", dimension: "107x60x85", material: "High Quality" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-9628aba2-bb4f-4553-9a0d-7d299421ef0d.png"
            },
