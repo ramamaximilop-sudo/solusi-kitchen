@@ -587,8 +587,6 @@ export const ProductCatalog = () => {
                       </p>
                       <button 
                         onClick={handleWhatsAppInquiry}
-<button
-              onClick={handleWhatsAppInquiry}
               disabled={!formData.name || !formData.address}
               className="w-full bg-[#206A5D] text-white py-4 text-[11px] font-black uppercase tracking-[0.2em] flex items-center justify-center gap-3 hover:bg-opacity-90 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
             >
