@@ -65,7 +65,7 @@ export const PRODUCTS: Product[] = [
     name: "GEA STAINLESS STEEL UNDER COUNTER FREEZER L-RW6T4HHHH",
     brand: "GEA",
     category: "FREEZER",
-    subCategory: FREEZER",
+    subCategory: "FREEZER",
     price: 0,
     description: "Tanyakan Langsung Menuju Whatsapp.",
     specs: { capacity: "", wattage: "", dimension: "235x70x85", material: "Food Grade Alloy" },
