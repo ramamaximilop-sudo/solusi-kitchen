@@ -78,7 +78,7 @@ export const PRODUCTS: Product[] = [
     category: "FREEZER",
     subCategory: "FREEZER",
     price: 0,
-    description: ".",
+    description: "Tanyakan Langsung Menuju Whatsapp.",
     specs: { capacity: "", wattage: "150 W", dimension: "50 x 50 x 100 cm", material: "High Quality },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-2ed9bb8b-7a35-4db6-97ce-c3274b886111.png"
   },
