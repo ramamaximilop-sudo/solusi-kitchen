@@ -69,7 +69,7 @@ export const PRODUCTS: Product[] = [
     price: 0,
     description: "Tanyakan Langsung Menuju Whatsapp.",
     specs: { capacity: "", wattage: "", dimension: "235x70x85", material: "Food Grade Alloy" },
-    image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&q=80&w=600"
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-142f9f62-5fc3-4bdd-b075-4d2f4cb427cd.png"
   },
   {
     id: 6,
@@ -245,7 +245,7 @@ export const PRODUCTS: Product[] = [
     price: 7920000,
     description: "Tanyakan Langsung Menuju Whatsapp.",
     specs: { capacity: "", wattage: "", dimension: "152x75,7x88", material: "High Quality" },
-    image: "https://yerutlqkfjicrfgsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-f29f35ae-3147-435a-8d54-8a06f7b8558d.png"
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-f29f35ae-3147-435a-8d54-8a06f7b8550d.png"
   },
   {
     id: 22,
