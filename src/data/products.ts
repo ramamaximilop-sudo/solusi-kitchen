@@ -347,4 +347,148 @@ export const PRODUCTS: Product[] = [
     specs: { capacity: "", wattage: "", dimension: "60x53x84,5", material: "High Quality" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-f7b7f4fc-630e-441d-b956-80ad88aec800.png"
            },
+   {
+  id: 30,
+    name: "Up Right Freezer",
+    brand: "GEA",
+    category: "FREEZER",
+    subCategory: "FREEZER",
+    price:   0,
+    description: "Tanyakn Langsung Menuju Whatsapp.",
+    specs: { capacity: "", wattage: "", dimension: "55x57x169", material: "High Quality" },
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-2b2c8d52-3067-4f26-b802-ee0c0536a3a0.png"
+   },
+  {
+  id: 31,
+    name: "GEA UPRIGHT FREEZER GF-20",
+    brand: "GEA",
+    category: "FREEZER",
+    subCategory: "FREEZER",
+    price:   0,
+    description: "Tanyakn Langsung Menuju Whatsapp.",
+    specs: { capacity: "", wattage: "", dimension: "55x57x144", material: "High Quality" },
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-2b2c8d52-3067-4f26-b802-ee0c0536a3a0.png"
+  },
+  {
+  id: 32,
+    name: "GEA UPRIGHT FREEZER GF-20",
+    brand: "GEA",
+    category: "FREEZER",
+    subCategory: "FREEZER",
+    price:   0,
+    description: "Tanyakn Langsung Menuju Whatsapp.",
+    specs: { capacity: "", wattage: "", dimension: "156x65x88", material: "High Quality" },
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-e56945e5-ab8e-40ab-ba95-d95f75d8fe75.png"
+  },
+  {
+  id: 33,
+    name: "GEA CHEST FREEZER AB-330-ITR",
+    brand: "GEA",
+    category: "FREEZER",
+    subCategory: "FREEZER",
+    price:   0,
+    description: "Tanyakn Langsung Menuju Whatsapp.",
+    specs: { capacity: "", wattage: "", dimension: "", material: "High Quality" },
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-56763e5c-2216-4c4f-b20f-484b95a253b4.png"
+  }
+  {
+  id: 34,
+    name: "GEA CHEST FREEZER AB-1200-T-X",
+    brand: "GEA",
+    category: "FREEZER",
+    subCategory: "FREEZER",
+    price:   0,
+    description: "Tanyakn Langsung Menuju Whatsapp.",
+    specs: { capacity: "", wattage: "", dimension: "225x82x88", material: "High Quality" },
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-497e10e4-cf13-4cd2-8e89-74348ddb0b06.png"
+},
+  {
+  id: 35,
+    name: "GEA CHEST FREEZER AB-900-T-X",
+    brand: "GEA",
+    category: "FREEZER",
+    subCategory: "FREEZER",
+    price:   0,
+    description: "Tanyakn Langsung Menuju Whatsapp.",
+    specs: { capacity: "", wattage: "", dimension: "193x82x88", material: "High Quality" },
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-57dd4cdf-4b4b-469f-a48a-3fec9ab94aed.png"
+  },
+{
+    id: 36,
+    name: "GEA CHEST FREEZER AB-750-T-X",
+    brand: "GEA",
+    category: "FREEZER",
+    subCategory: "FREEZER",
+    price:   0,
+    description: "Tanyakn Langsung Menuju Whatsapp.",
+    specs: { capacity: "", wattage: "", dimension: "192x65x88", material: "High Quality" },
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-7bb78cf9-7376-4773-9eb3-809f590ce43a.png"
+},
+  {
+    id: 37,
+    name: "GEA CHEST FREEZER AB-600-T-X",
+    brand: "GEA",
+    category: "FREEZER",
+    subCategory: "FREEZER",
+    price:   0,
+    description: "Tanyakn Langsung Menuju Whatsapp.",
+    specs: { capacity: "", wattage: "", dimension: "170x65x88", material: "High Quality" },
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-b12542eb-6c6f-4303-9a54-37100e7a0afd.png"
+  },
+{
+ id: 38,
+    name: "GEA CHEST FREEZER AB-506-T-X",
+    brand: "GEA",
+    category: "FREEZER",
+    subCategory: "FREEZER",
+    price:   0,
+    description: "Tanyakn Langsung Menuju Whatsapp.",
+    specs: { capacity: "", wattage: "", dimension: "156x65x88", material: "High Quality" },
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-6b373237-62c2-4b1c-8311-867ff693cec4.png"
+}
+{
+ id: 39,
+    name: "GEA CHEST FREEZER AB-396-T-X",
+    brand: "GEA",
+    category: "FREEZER",
+    subCategory: "FREEZER",
+    price:   0,
+    description: "Tanyakn Langsung Menuju Whatsapp.",
+    specs: { capacity: "", wattage: "", dimension: "128x65x88", material: "High Quality" },
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-267c2814-93f8-446c-9475-3d644c571816.png"
+}
+{
+   id: 40,
+    name: "GEA CHEST FREEZER AB-336-R",
+    brand: "GEA",
+    category: "FREEZER",
+    subCategory: "FREEZER",
+    price:   0,
+    description: "Tanyakn Langsung Menuju Whatsapp.",
+    specs: { capacity: "", wattage: "", dimension: "112,5x68,5x85,5", material: "High Quality" },
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-2304cb26-a12a-48d2-8865-79d57e6b9e04.png"
+}
+{
+  id: 41,
+    name: "GEA CHEST FREEZER AB-226-R",
+    brand: "GEA",
+    category: "FREEZER",
+    subCategory: "FREEZER",
+    price:   0,
+    description: "Tanyakn Langsung Menuju Whatsapp.",
+    specs: { capacity: "", wattage: "", dimension: "", material: "High Quality" },
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-06c60fc2-5766-4d86-b95c-0e9ec7052f16.png"
+}
+{
+  id: 41,
+    name: "GEA CHEST FREEZER AB-106-R",
+    brand: "GEA",
+    category: "FREEZER",
+    subCategory: "FREEZER",
+    price:   0,
+    description: "Tanyakn Langsung Menuju Whatsapp.",
+    specs: { capacity: "102 liter", wattage: "80W", dimension: "56,3x56,2x84,5", material: "High Quality" },
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-547f6e53-4db7-46a7-8574-8a3e17ee8be7.png"
+}
+  
   ];
