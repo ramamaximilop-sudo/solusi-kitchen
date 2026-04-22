@@ -370,6 +370,6 @@ export default function App() {
         <Footer />
         <WhatsAppFloat />
       </div>
-  <Router basename="/solusi-kitchen">
+ </Router>
   );
 }
