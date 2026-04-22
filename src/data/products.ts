@@ -234,7 +234,7 @@ export const PRODUCTS: Product[] = [
     price: 10692000,
   description: "Tanyakan Langsung Menuju Whatsapp.",
     specs: { capacity: "", wattage: "", dimension: "188x82x88", material: "High Quality" },
-    image: "https://yerutlqkfjicrfgsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-75fb7644-d014-45cf-a9a3-81856fea076f.png"
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-75fb7644-d014-45cf-a9a3-81856fea076f.png"
   },
   {
     id: 21,
