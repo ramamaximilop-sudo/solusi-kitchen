@@ -78,7 +78,7 @@ export const ProductCatalog = () => {
     "ICE MAKER",
     "ICE CREAM EQUIPMENT",
     "stainless-kitchen",
-    "supermarket equipment",
+    "SUPERMARKET EQUIPMENT",
     "COLD ROOM STORAGE",
     "MISCELLANEOUS",
     "MEDICAL REFRIGERATION",
