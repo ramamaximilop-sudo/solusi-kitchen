@@ -1,7 +1,7 @@
 import { Product } from '../type';
 
 export const minimarketSupermarketEquipmentProducts: Product[] = [
-  {
+{
     id: 1,
     name: "GEA MULTIDECK OPEN CHILLER RTS-190L",
     slug: "gea-multideck-open-chiller-rts-190l",
@@ -10,6 +10,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 19800000,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: ""
   },
   {
@@ -21,6 +22,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 25621200,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-a8d4d6cd-7e30-4cb0-993c-b91e7a9b246e.png"
   },
   {
@@ -32,6 +34,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 40392000,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-e5ef7999-1d35-468b-ab5b-8eddb26f910f.png"
   },
   {
@@ -43,7 +46,8 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 48708000,
     description: "Tanyakan langsung melalui WhatsApp",
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-3d5b8c9a-4e6f-4a7b-8c9d-0e1f2a3b4c5d.pnghttps://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-e5ef7999-1d35-468b-ab5b-8eddb26f910f.png"
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-e5ef7999-1d35-468b-ab5b-8eddb26f910f.png"
   },
   {
     id: 5,
@@ -54,6 +58,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 48708000,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-7699edca-2bd5-4989-8099-377a49f9367e.png"
   },
   {
@@ -65,6 +70,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 67320000,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-1d39b00f-ce09-4cb9-8299-2c0901c48963.png"
   },
   {
@@ -76,6 +82,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 49104000,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-2d815cf7-ba36-4a0e-af07-36fe03bb670a.png"
   },
   {
@@ -87,6 +94,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 30492000,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-c2e6d9c6-6ea3-4173-a4db-b2a013214202.png"
   },
   {
@@ -98,7 +106,8 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 35244000,
     description: "Tanyakan langsung melalui WhatsApp",
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-4d6e7f8g-5h9i-6j0k-7l1m-8n2o3p4q5r6s.pnghttps://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-c2e6d9c6-6ea3-4173-a4db-b2a013214202.png"
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-c2e6d9c6-6ea3-4173-a4db-b2a013214202.png"
   },
   {
     id: 10,
@@ -109,7 +118,8 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 47520000,
     description: "Tanyakan langsung melalui WhatsApp",
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-c2e6d9c6-6ea3-4173-a4db-b2a013214202.pnghttps://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-5e7f8g9h-6i0j-7k1l-8m2n-9o3p4q5r6s7t.png"
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-c2e6d9c6-6ea3-4173-a4db-b2a013214202.png"
   },
   {
     id: 11,
@@ -120,6 +130,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 57816000,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-c2e6d9c6-6ea3-4173-a4db-b2a013214202.png"
   },
   {
@@ -131,6 +142,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 29304000,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-530a0de7-d81a-4f2b-9466-dce66ad972e9.png"
   },
   {
@@ -142,7 +154,8 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 33660000,
     description: "Tanyakan langsung melalui WhatsApp",
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-641b1ef8-e92b-4g3c-0577-edf77be083f0.pnghttps://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-530a0de7-d81a-4f2b-9466-dce66ad972e9.png"
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-530a0de7-d81a-4f2b-9466-dce66ad972e9.png"
   },
   {
     id: 14,
@@ -153,7 +166,8 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 39996000,
     description: "Tanyakan langsung melalui WhatsApp",
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-7699edca-2bd5-4989-8099-377a49f9367e.pnghttps://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-530a0de7-d81a-4f2b-9466-dce66ad972e9.png"
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-530a0de7-d81a-4f2b-9466-dce66ad972e9.png"
   },
   {
     id: 15,
@@ -164,7 +178,8 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 43560000,
     description: "Tanyakan langsung melalui WhatsApp",
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-7699edca-2bd5-4989-8099-377a49f9367e.pnghttps://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-530a0de7-d81a-4f2b-9466-dce66ad972e9.png"
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-530a0de7-d81a-4f2b-9466-dce66ad972e9.png"
   },
   {
     id: 16,
@@ -175,6 +190,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 32472000,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-8567b76e-77a4-48cc-a3e9-465d6d5f1d6c.png"
   },
   {
@@ -186,6 +202,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 34848000,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-8567b76e-77a4-48cc-a3e9-465d6d5f1d6c.png"
   },
   {
@@ -197,6 +214,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 41184000,
     description: "tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-8567b76e-77a4-48cc-a3e9-465d6d5f1d6c.png"
   },
   {
@@ -208,6 +226,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 61776000,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-8567b76e-77a4-48cc-a3e9-465d6d5f1d6c.png"
   },
   {
@@ -219,6 +238,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 34848000,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-b1a85097-c4a9-4ff9-8b8f-078a1c57b5fe.png"
   },
   {
@@ -230,7 +250,8 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 42768000,
     description: "Tanyakan langsung melalui WhatsApp",
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-b1a85097-c4a9-4ff9-8b8f-078a1c57b5fe.pnghttps://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-b1a85097-c4a9-4ff9-8b8f-078a1c57b5fe.png"
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-b1a85097-c4a9-4ff9-8b8f-078a1c57b5fe.png"
   },
   {
     id: 22,
@@ -241,7 +262,8 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 47520000,
     description: "Tanyakan langsung melalui WhatsApp",
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-b1a85097-c4a9-4ff9-8b8f-078a1c57b5fe.pnghttps://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-b1a85097-c4a9-4ff9-8b8f-078a1c57b5fe.png"
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-b1a85097-c4a9-4ff9-8b8f-078a1c57b5fe.png"
   },
   {
     id: 23,
@@ -252,6 +274,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 63360000,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-b1a85097-c4a9-4ff9-8b8f-078a1c57b5fe.png"
   },
   {
@@ -263,6 +286,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 36432000,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-7c1e249b-3ce7-4440-b30a-cd3549e021e1.png"
   },
   {
@@ -274,6 +298,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 43560000,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-7c1e249b-3ce7-4440-b30a-cd3549e021e1.png"
   },
   {
@@ -285,6 +310,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 61776000,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-7c1e249b-3ce7-4440-b30a-cd3549e021e1.png"
   },
   {
@@ -296,6 +322,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 11,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-1f884885-ed7f-4fef-9ebc-200c354c680d.png"
   },
   {
@@ -307,6 +334,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 11,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-163278f2-5d37-4d24-812f-abcf63553a81.png"
   },
   {
@@ -318,6 +346,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 11,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-163278f2-5d37-4d24-812f-abcf63553a81.png"
   },
   {
@@ -329,6 +358,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 11,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-15bd144b-2fe4-4235-9a04-183953fb7887.png"
   },
   {
@@ -340,6 +370,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 27561600,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-e4a52618-ba63-40bd-a7fb-208c8fcef664.png"
   },
   {
@@ -351,6 +382,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 11880000,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-6a6013c1-a141-46da-a43a-04bdeaef5995.png"
   },
   {
@@ -362,6 +394,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 7524000,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-ce18cf95-e1d5-42c7-8ef6-669e3cfa55d5.png"
   },
   {
@@ -373,6 +406,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 17028000,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-d722f6d2-51e9-499e-b37c-31f41f24d55b.png"
   },
   {
@@ -384,6 +418,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 3714000,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-6212a9fe-6fa7-49e9-8c34-e0771da869b9.png"
   },
   {
@@ -395,6 +430,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 4268400,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-6212a9fe-6fa7-49e9-8c34-e0771da869b9.png"
   },
   {
@@ -406,6 +442,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 11,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-b6acb520-2477-4f9b-9440-7414fb3b103c.png"
   },
   {
@@ -417,6 +454,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 11,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: ""
   },
   {
@@ -428,6 +466,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 11,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-b6acb520-2477-4f9b-9440-7414fb3b103c.png"
   },
   {
@@ -439,6 +478,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 11,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-b6acb520-2477-4f9b-9440-7414fb3b103c.png"
   },
   {
@@ -450,6 +490,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 11,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-1d99d049-673c-4ec6-9f6f-c8f44c0fee78.png"
   },
   {
@@ -461,6 +502,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 11,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: ""
   },
   {
@@ -472,6 +514,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 11,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-1d99d049-673c-4ec6-9f6f-c8f44c0fee78.png"
   },
   {
@@ -483,6 +526,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 11,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-1d99d049-673c-4ec6-9f6f-c8f44c0fee78.png"
   },
   {
@@ -494,6 +538,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 11,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-d8eec96b-d382-4e58-8a2f-1c50a5decc55.png"
   },
   {
@@ -505,6 +550,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 11,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-d8eec96b-d382-4e58-8a2f-1c50a5decc55.png"
   },
   {
@@ -516,6 +562,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 11,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-d8eec96b-d382-4e58-8a2f-1c50a5decc55.png"
   },
   {
@@ -527,6 +574,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 11,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-452d1d61-22ea-4ae3-95d1-7e39b774ed00.png"
   },
   {
@@ -538,6 +586,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 11,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-452d1d61-22ea-4ae3-95d1-7e39b774ed00.png"
   },
   {
@@ -549,6 +598,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 11,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-452d1d61-22ea-4ae3-95d1-7e39b774ed00.png"
   },
   {
@@ -560,6 +610,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 11,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-24999b17-1355-458a-9f0f-26608cec1e0a.png"
   },
   {
@@ -571,6 +622,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 11,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: ""
   },
   {
@@ -582,6 +634,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 11,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-24999b17-1355-458a-9f0f-26608cec1e0a.png"
   },
   {
@@ -593,6 +646,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 11,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-24999b17-1355-458a-9f0f-26608cec1e0a.png"
   },
   {
@@ -604,6 +658,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 11,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: ""
   },
   {
@@ -615,6 +670,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 11,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-24999b17-1355-458a-9f0f-26608cec1e0a.png"
   },
   {
@@ -626,6 +682,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 11,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-bc0f71d9-7682-4c91-909d-80af6a6df028.png"
   },
   {
@@ -637,6 +694,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 11,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: ""
   },
   {
@@ -648,6 +706,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 11,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-41121646-d059-4085-b05c-f4650e092dad.png"
   },
   {
@@ -659,6 +718,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 11,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-41121646-d059-4085-b05c-f4650e092dad.png"
   },
   {
@@ -670,6 +730,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 11,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-41121646-d059-4085-b05c-f4650e092dad.png"
   },
   {
@@ -681,6 +742,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 11,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-41121646-d059-4085-b05c-f4650e092dad.png"
   },
   {
@@ -692,6 +754,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 60192000,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-76da33a3-e4d7-47ec-a1da-513e887a8a13.png"
   },
   {
@@ -703,6 +766,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 71280000,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-76da33a3-e4d7-47ec-a1da-513e887a8a13.png"
   },
   {
@@ -714,6 +778,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 11,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-76da33a3-e4d7-47ec-a1da-513e887a8a13.png"
   },
   {
@@ -725,6 +790,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 11,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: ""
   },
   {
@@ -736,6 +802,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 11,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: ""
   },
   {
@@ -747,6 +814,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     subCategory: "supermarket equipment",
     price: 11,
     description: "Tanyakan langsung melalui WhatsApp",
+    specs: { capacity: "", wattage: "", dimension: "", material: "" },
     image: ""
   }
 ];
