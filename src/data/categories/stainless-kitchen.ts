@@ -1,7 +1,6 @@
 import { Product } from '../type';
 
 export const stainlesskitchenproducts: Product[] = [
-
   {
     id: 1,
     name: "GEA STAINLESS STEEL UPRIGHT CHILLER M-RW8U1HH",
@@ -11,6 +10,7 @@ export const stainlesskitchenproducts: Product[] = [
     subCategory: "stainless-kitchen",
     price: 16632000,
     description: "CFC Gratis Eksterior dan interior baja stainless penuh Sistem pendingin drop-in yang dapat dilepas Kompresor EMBRACO Kontrol suhu digital Katup ekspansi elektronik Pencairan gas panas otomatis dengan sistem penguapan sendiri Evaporator berlapis poli (mencegah korosi dan memastikan keamanan makanan) Pemanas pintu dan gasket yang dapat dilepas untuk memudahkan perawatan Cabut braket & geser baki S / S Ruang dalam dengan desain sudut bulat untuk memudahkan pembersihan Kastor dan kunci Rak kawat berlapis poli Desain ukuran GN (GN 2/1) Dimensi PxLxT (cm): 73,7x81,5x198",
+    specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-43322396-5591-44a4-816f-e94a31b58523.png"
   },
   {
@@ -22,10 +22,9 @@ export const stainlesskitchenproducts: Product[] = [
     subCategory: "stainless-kitchen",
     price: 21780000,
     description: "CFC Gratis Eksterior dan interior baja stainless penuh Sistem pendingin drop-in yang dapat dilepas Kompresor EMBRACO Kontrol suhu digital Katup ekspansi elektronik Pencairan gas panas otomatis dengan sistem penguapan sendiri Evaporator berlapis poli (mencegah korosi dan memastikan keamanan makanan) Pemanas pintu dan gasket yang dapat dilepas untuk memudahkan perawatan Cabut braket & geser baki S / S Ruang dalam dengan desain sudut bulat untuk memudahkan pembersihan Kastor dan kunci Rak kawat berlapis poli Desain ukuran GN (GN 2/1) Dimensi PxLxT (cm): 140x81,5x198",
+    specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-9cdc824a-889c-48c1-9c34-244c05688d17.png"
   },
-  
-    
   {
     id: 4,
     name: "GEA STAINLESS STEEL UPRIGHT FREEZER L-RW8U1HH",
@@ -35,6 +34,7 @@ export const stainlesskitchenproducts: Product[] = [
     subCategory: "stainless-kitchen",
     price: 11,
     description: "CFC Gratis Eksterior dan interior baja stainless penuh Sistem pendingin drop-in yang dapat dilepas Kompresor EMBRACO Kontrol suhu digital Katup ekspansi elektronik Pencairan gas panas otomatis dengan sistem penguapan sendiri Evaporator berlapis poli (mencegah korosi dan memastikan keamanan makanan) Pemanas pintu dan gasket yang dapat dilepas untuk memudahkan perawatan Cabut braket & geser baki S / S Ruang dalam dengan desain sudut bulat untuk memudahkan pembersihan Kastor dan kunci Rak kawat berlapis poli Desain ukuran GN (GN 2/1) Dimensi PxLxT (cm) :73,7x81,5x198",
+    specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-43322396-5591-44a4-816f-e94a31b58523.png"
   },
   {
@@ -46,6 +46,7 @@ export const stainlesskitchenproducts: Product[] = [
     subCategory: "stainless-kitchen",
     price: 11,
     description: "CFC Gratis Eksterior dan interior baja stainless penuh Sistem pendingin drop-in yang dapat dilepas Kompresor EMBRACO Kontrol suhu digital Katup ekspansi elektronik Pencairan gas panas otomatis dengan sistem penguapan sendiri Evaporator berlapis poli (mencegah korosi dan memastikan keamanan makanan) Pemanas pintu dan gasket yang dapat dilepas untuk memudahkan perawatan Cabut braket & geser baki S / S Ruang dalam dengan desain sudut bulat untuk memudahkan pembersihan Kastor dan kunci Rak kawat berlapis poli Desain ukuran GN (GN 2/1) Dimensi PxLxT (cm): 140x81,5x198",
+    specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-9cdc824a-889c-48c1-9c34-244c05688d17.png"
   },
   {
@@ -57,6 +58,7 @@ export const stainlesskitchenproducts: Product[] = [
     subCategory: "stainless-kitchen",
     price: 11,
     description: "Sirkulasi udara panas di sisi depan, cocok ditempatkan tepat di sebelah dinding Termostat digital lampu interior Tubuh stainless steel Dimensi PxLxT (cm): 90x53x90",
+    specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-085fa79a-715c-4e06-9c27-aa1604e7e347.png"
   },
   {
@@ -68,6 +70,7 @@ export const stainlesskitchenproducts: Product[] = [
     subCategory: "stainless-kitchen",
     price: 11,
     description: "Sirkulasi udara panas di sisi depan, cocok ditempatkan tepat di sebelah dinding Termostat digital lampu interior Tubuh stainless steel Dimensi PxLxT (cm): 135x53x90",
+    specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-1140afce-2d08-4c4f-8c24-a90ef9e88381.png"
   },
   {
@@ -79,6 +82,7 @@ export const stainlesskitchenproducts: Product[] = [
     subCategory: "stainless-kitchen",
     price: 13068000,
     description: "Lampu LED CFC Gratis Eksterior dan interior baja stainless penuh Sistem lemari pendingin yang bisa dilepas Kompresor EMBRACO Kontrol suhu digital Katup ekspansi elektronik Pencairan gas panas otomatis dengan sistem penguapan sendiri Evaporator berlapis poli (mencegah korosi dan memastikan keamanan makanan) Pemanas pintu Pemanas pintu dan gasket yang dapat dilepas untuk memudahkan perawatan Braket & geser baki S / S yang dapat dilepas Ruang dalam dengan desain sudut bulat untuk memudahkan pembersihan Kastor dan kunci Desain ukuran GN (GN 1/1) Dimensi PxLxT (cm): 95,5x70x85",
+    specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-87cd3bd6-9446-47ef-9bc7-eb2ad3611caf.pngg"
   },
   {
@@ -90,6 +94,7 @@ export const stainlesskitchenproducts: Product[] = [
     subCategory: "stainless-kitchen",
     price: 15444000,
     description: "Lampu LED CFC FREE Eksterior dan interior baja stainless penuh Sistem lemari pendingin yang bisa dilepas Kompresor EMBRACO Kontrol suhu digital Katup ekspansi elektronik Pencairan gas panas otomatis dengan sistem penguapan sendiri Evaporator berlapis poli (mencegah korosi dan memastikan keamanan makanan) Pemanas pintu Pemanas pintu dan gasket yang dapat dilepas untuk memudahkan perawatan Braket & geser baki S / S yang dapat dilepas Ruang dalam dengan desain sudut bulat untuk memudahkan pembersihan Kastor dan kunci Desain ukuran GN (GN 1/1) Dimensi PxLxT (cm): 142x70x85",
+    specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-383124f9-ae66-47b0-a6ef-6c4c336d7baa.png"
   },
   {
@@ -101,6 +106,7 @@ export const stainlesskitchenproducts: Product[] = [
     subCategory: "stainless-kitchen",
     price: 17028000,
     description: "Lampu LED CFC FREE Eksterior dan interior baja stainless penuh Sistem lemari pendingin yang bisa dilepas Kompresor EMBRACO Kontrol suhu digital Katup ekspansi elektronik Pencairan gas panas otomatis dengan sistem penguapan sendiri Evaporator berlapis poli (mencegah korosi dan memastikan keamanan makanan) Pemanas pintu Pemanas pintu dan gasket yang dapat dilepas untuk memudahkan perawatan Braket & geser baki S / S yang dapat dilepas Ruang dalam dengan desain sudut bulat untuk memudahkan pembersihan Kastor dan kunci Desain ukuran GN (GN 1/1) Dimensi PxLxT (cm): 188,5x70x85",
+    specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-8587a96f-fa52-451f-8f35-7b99cfe00d3f.png"
   },
   {
@@ -112,6 +118,7 @@ export const stainlesskitchenproducts: Product[] = [
     subCategory: "stainless-kitchen",
     price: 19800000,
     description: "Lampu LED CFC Gratis Eksterior dan interior baja stainless penuh Sistem lemari pendingin yang bisa dilepas Kompresor EMBRACO Kontrol suhu digital Katup ekspansi elektronik Pencairan gas panas otomatis dengan sistem penguapan sendiri Evaporator berlapis poli (mencegah korosi dan memastikan keamanan makanan) Pemanas pintu Pemanas pintu dan gasket yang dapat dilepas untuk memudahkan perawatan Braket & geser baki S / S yang dapat dilepas Ruang dalam dengan desain sudut bulat untuk memudahkan pembersihan Kastor dan kunci Desain ukuran GN (GN 1/1) Dimensi PxLxT (cm): 235x70x85",
+    specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-c519f0ef-df35-45b3-840e-ccee43736748.png"
   },
   {
@@ -123,6 +130,7 @@ export const stainlesskitchenproducts: Product[] = [
     subCategory: "stainless-kitchen",
     price: 14256000,
     description: "CFC Gratis Eksterior dan interior baja stainless penuh Sistem pendingin kaset yang bisa dilepas Kompresor EMBRACO Kontrol suhu digital Katup ekspansi elektronik Pencairan gas panas otomatis dengan sistem penguapan sendiri Evaporator berlapis poli (mencegah korosi dan memastikan keamanan makanan) Pemanas pintu dan gasket yang dapat dilepas untuk memudahkan perawatan Braket & geser baki S / S yang dapat dilepas Ruang dalam dengan desain sudut bulat untuk memudahkan pembersihan Kastor dan kunci Rak kawat berlapis poli Kaki disesuaikan Desain ukuran GN (GN 1/1) Dimensi PxLxT (cm): 142x70x85",
+    specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-ceae69f7-3194-4fd6-b3e0-7b9ca4455b7c.png"
   },
   {
@@ -134,6 +142,7 @@ export const stainlesskitchenproducts: Product[] = [
     subCategory: "stainless-kitchen",
     price: 17820000,
     description: "CFC FREE Eksterior dan interior baja stainless penuh Sistem pendingin kaset yang bisa dilepas Kompresor EMBRACO Kontrol suhu digital Katup ekspansi elektronik Pencairan gas panas otomatis dengan sistem penguapan sendiri Evaporator berlapis poli (mencegah korosi dan memastikan keamanan makanan) Pemanas pintu dan gasket yang dapat dilepas untuk memudahkan perawatan Braket & geser baki S / S yang dapat dilepas Ruang dalam dengan desain sudut bulat untuk memudahkan pembersihan Kastor dan kunci Rak kawat berlapis poli Kaki disesuaikan Desain ukuran GN (GN 1/1) PASS THROUGH Dimensi PxLxT (cm): 181x76x85",
+    specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-ceae69f7-3194-4fd6-b3e0-7b9ca4455b7c.png"
   },
   {
@@ -145,6 +154,7 @@ export const stainlesskitchenproducts: Product[] = [
     subCategory: "stainless-kitchen",
     price: 15444000,
     description: "CFC FREE Eksterior dan interior baja stainless penuh Sistem pendingin kaset yang bisa dilepas Kompresor EMBRACO Kontrol suhu digital Katup ekspansi elektronik Pencairan gas panas otomatis dengan sistem penguapan sendiri Evaporator berlapis poli (mencegah korosi dan memastikan keamanan makanan) Pemanas pintu dan gasket yang dapat dilepas untuk memudahkan perawatan Braket & geser baki S / S yang dapat dilepas Ruang dalam dengan desain sudut bulat untuk memudahkan pembersihan Kastor dan kunci Rak kawat berlapis poli Kaki disesuaikan Desain ukuran GN (GN 1/1) Dimensi PxLxT (cm): 188,5x70x85",
+    specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-83dde951-e9d5-4436-8196-04960bdad56f.png"
   },
   {
@@ -156,6 +166,7 @@ export const stainlesskitchenproducts: Product[] = [
     subCategory: "stainless-kitchen",
     price: 17820000,
     description: "CFC FREE Eksterior dan interior baja stainless penuh Sistem pendingin kaset yang bisa dilepas Kompresor EMBRACO Kontrol suhu digital Katup ekspansi elektronik Pencairan gas panas otomatis dengan sistem penguapan sendiri Evaporator berlapis poli (mencegah korosi dan memastikan keamanan makanan) Pemanas pintu dan gasket yang dapat dilepas untuk memudahkan perawatan Braket & geser baki S / S yang dapat dilepas Ruang dalam dengan desain sudut bulat untuk memudahkan pembersihan Kastor dan kunci Rak kawat berlapis poli Kaki disesuaikan Desain ukuran GN (GN 1/1) Dimensi PxLxT (cm): 235x70x85",
+    specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-723b79cb-868f-4a74-89b5-2f769879d2d4.png"
   },
   {
@@ -167,9 +178,10 @@ export const stainlesskitchenproducts: Product[] = [
     subCategory: "stainless-kitchen",
     price: 11,
     description: "CFC FREE Eksterior dan interior baja stainless penuh Sistem pendingin kaset yang bisa dilepas Kompresor EMBRACO Kontrol suhu digital Katup ekspansi elektronik Pencairan gas panas otomatis dengan sistem penguapan sendiri Evaporator berlapis poli (mencegah korosi dan memastikan keamanan makanan) Pemanas pintu dan gasket yang dapat dilepas untuk memudahkan perawatan Braket & geser baki S / S yang dapat dilepas Ruang dalam dengan desain sudut bulat untuk memudahkan pembersihan Kastor dan kunci Rak kawat berlapis poli Kaki disesuaikan Desain ukuran GN (GN 1/1) Dimensi PxLxT (cm): 142x70x85",
+    specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-723b79cb-868f-4a74-89b5-2f769879d2d4.png"
   },
-    {
+  {
     id: 17,
     name: "GEA STAINLESS STEEL UNDER COUNTER FREEZER L-RW6T3HHH",
     slug: "gea-stainless-steel-under-counter-freezer-l-rw6t3hhh",
@@ -178,6 +190,7 @@ export const stainlesskitchenproducts: Product[] = [
     subCategory: "stainless-kitchen",
     price: 11,
     description: "CFC FREE Eksterior dan interior baja stainless penuh Sistem pendingin kaset yang bisa dilepas Kompresor EMBRACO Kontrol suhu digital Katup ekspansi elektronik Pencairan gas panas otomatis dengan sistem penguapan sendiri Evaporator berlapis poli (mencegah korosi dan memastikan keamanan makanan) Pemanas pintu dan gasket yang dapat dilepas untuk memudahkan perawatan Braket & geser baki S / S yang dapat dilepas Ruang dalam dengan desain sudut bulat untuk memudahkan pembersihan Kastor dan kunci Rak kawat berlapis poli Kaki disesuaikan Desain ukuran GN (GN 1/1) Dimensi PxLxT (cm): 188,5x70x85",
+    specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-7a9e1b94-05ae-4c6d-83be-da340ac958f8.png"
   },
   {
@@ -189,6 +202,7 @@ export const stainlesskitchenproducts: Product[] = [
     subCategory: "stainless-kitchen",
     price: 19800000,
     description: "CFC FREE Eksterior dan interior baja stainless penuh Sistem pendingin kaset yang bisa dilepas Kompresor EMBRACO Kontrol suhu digital Katup ekspansi elektronik Pencairan gas panas otomatis dengan sistem penguapan sendiri Evaporator berlapis poli (mencegah korosi dan memastikan keamanan makanan) Pemanas pintu dan gasket yang dapat dilepas untuk memudahkan perawatan Braket & geser baki S / S yang dapat dilepas Ruang dalam dengan desain sudut bulat untuk memudahkan pembersihan Kastor dan kunci Rak kawat berlapis poli Kaki disesuaikan Desain ukuran GN (GN 1/1) Dimensi PxLxT (cm): 235x70x85",
+    specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-797053b8-602e-48ef-b7d1-3faef6bb2f71.png"
   },
   {
@@ -200,6 +214,7 @@ export const stainlesskitchenproducts: Product[] = [
     subCategory: "stainless-kitchen",
     price: 23760000,
     description: "CFC Gratis Eksterior dan interior baja stainless penuh Sistem pendingin kaset yang bisa dilepas Kompresor EMBRACO Kontrol suhu digital Katup ekspansi elektronik Pencairan gas panas otomatis dengan sistem penguapan sendiri Evaporator berlapis poli (mencegah korosi dan memastikan keamanan makanan) Pemanas dan gasket pintu yang dapat dilepas untuk memudahkan perawatan S / S braket & geser baki yang dapat dihapus Ruang dalam dengan desain sudut bulat untuk memudahkan pembersihan Kastor dan kunci Kaki disesuaikan Desain ukuran GN (Laci GN 1/1 x 6) Dimensi PxLxT (cm): 188,5x70x85",
+    specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-24ec3ffb-7947-4aa4-94f8-f1e517aa0021.png"
   },
   {
@@ -211,6 +226,7 @@ export const stainlesskitchenproducts: Product[] = [
     subCategory: "stainless-kitchen",
     price: 16632000,
     description: "CFC Free Full body stainless steel Digital Temperature Control Removable drop-in air cooling system Automatic Defrost Poly coated evaporator Round corner design inside refrigerator (Easy to clean and hygiene) Adjustable feet GN Design Dimensi PxLxT (cm) :160x66x55",
+    specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-ef1eab35-6f40-4be3-85b7-21526d4883bc.png"
   },
   {
@@ -222,6 +238,7 @@ export const stainlesskitchenproducts: Product[] = [
     subCategory: "stainless-kitchen",
     price: 20196000,
     description: "CFC Free Full Stainless steel exterior and interior Removeable cassette refrigeration system EMBRACO compressor Digital temperatur control Electronic expansion valve Auto hot gas defrost with self evaporated system Poly-coated evaporator (prevent corrosion and ensure food safety) Removeable door heater and gasket for easier maintenance Removeable S/S bracket & tray slide Inner chamber with round corner design for easy cleaning Castor and lock Adjustable feet GN size design (GN 1/1 x 6 Drawers) Dimensi PxLxT (cm) :206x66x5",
+    specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-70d259aa-c5a6-4689-b3e1-70122baddf14.png"
   },
   {
@@ -233,6 +250,7 @@ export const stainlesskitchenproducts: Product[] = [
     subCategory: "stainless-kitchen",
     price: 11,
     description: "CFC Free Full Stainless steel exterior and interior Removable drop-in refrigeration system EMBRACO compressor Digital temperatur control Electronic expansion valve Poly-coated evaporator (prevent corrosion and ensure food safety) Removable door heater and gasket for easier maintenance Removeble S/S bracket & tray slide Inner chamber with round corner design for easy cleaning Castor and lock Poly-coated wireshelf GN size design (GN 2/1) Dimensi PxLxT (cm) :140x81,5x198",
+    specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-c786b875-e1fc-456d-83a0-84a1ae4942c4.png"
   },
   {
@@ -244,6 +262,7 @@ export const stainlesskitchenproducts: Product[] = [
     subCategory: "stainless-kitchen",
     price: 17820000,
     description: "CFC Free Full Stainless steel exterior and interior Removable drop-in refrigeration system EMBRACO compressor Digital temperatur control Electronic expansion valve Auto hot gas defrost with self evaporated system Poly-coated evaporator (prevent corrosion and ensure food safety) Removable door heater and gasket for easier maintenance Removeble S/S bracket & tray slide Inner chamber with round corner design for easy cleaning Castor and lock Poly-coated wireshelf GN size design (GN 2/1) Dimensi PxLxT (cm) :73,7x81,5x198",
+    specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-31f16a60-8743-4b2c-8e14-986127bbcc10.png"
   },
   {
@@ -255,6 +274,7 @@ export const stainlesskitchenproducts: Product[] = [
     subCategory: "stainless-kitchen",
     price: 23364000,
     description: "CFC Free Full Stainless steel exterior and interior Removable drop-in refrigeration system EMBRACO compressor Digital temperatur control Electronic expansion valve Auto hot gas defrost with self evaporated system Poly-coated evaporator (prevent corrosion and ensure food safety) Removable door heater and gasket for easier maintenance Removeble S/S bracket & tray slide Inner chamber with round corner design for easy cleaning Castor and lock Poly-coated wireshelf GN size design (GN 2/1) Dimensi PxLxT (cm) :140x81,5x198",
+    specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
     image: "http://www.solusikitchen-maks.com/thumbs/GEA-M-RW8U2GG..jpg"
   },
   {
@@ -266,6 +286,7 @@ export const stainlesskitchenproducts: Product[] = [
     subCategory: "stainless-kitchen",
     price: 12276000,
     description: "2 doors To keep fruits, vegetables, milk, etc Suitable for Hotel, Restaurant, Canteen, etc Dimensi PxLxT (cm) :120x70x85",
+    specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-49e35436-04b5-4f40-839a-dff34d76dd15.png"
   },
   {
@@ -277,6 +298,7 @@ export const stainlesskitchenproducts: Product[] = [
     subCategory: "stainless-kitchen",
     price: 13226400,
     description: "2 doors To keep fruits, vegetables, milk, etc Suitable for Hotel, Restaurant, Canteen, etc Dimensi PxLxT (cm) :150x70x85",
+    specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-49e35436-04b5-4f40-839a-dff34d76dd15.png"
   },
   {
@@ -288,6 +310,7 @@ export const stainlesskitchenproducts: Product[] = [
     subCategory: "stainless-kitchen",
     price: 14414400,
     description: "3 doors To keep fruits, vegetables, milk, etc Suitable for Hotel, Restaurant, Canteen, etc Dimensi PxLxT (cm) :180x70x85",
+    specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-a5bd0e7f-1899-48bf-8e45-0b8da744f7ed.png"
   },
   {
@@ -299,6 +322,7 @@ export const stainlesskitchenproducts: Product[] = [
     subCategory: "stainless-kitchen",
     price: 16632000,
     description: "4 doors To keep fruits, vegetables, milk, etc Suitable for Hotel, Restaurant, Canteen, etc Dimensi PxLxT (cm) :225x70x85",
+    specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-0b8855c5-f9ba-4b3d-9d29-7bfa3cbc342a.png"
   },
   {
@@ -310,6 +334,7 @@ export const stainlesskitchenproducts: Product[] = [
     subCategory: "stainless-kitchen",
     price: 11,
     description: "2 doors To keep frozen meat, seafood, chicken nuggets, french fries, etc Suitable for Hotel, Restaurant, Canteen, etc Dimensi PxLxT (cm) :150x70x85",
+    specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-b6069150-0906-41d0-8928-bcd51474d090.png"
   },
   {
@@ -321,6 +346,7 @@ export const stainlesskitchenproducts: Product[] = [
     subCategory: "stainless-kitchen",
     price: 11,
     description: "3 doors To keep frozen meat, seafood, chicken nuggets, french fries, etc Suitable for Hotel, Restaurant, Canteen, etc Dimensi PxLxT (cm) :180x70x85",
+    specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-ed9e5712-ee93-4b6b-8be9-2e0da0feef54.png"
   },
   {
@@ -332,6 +358,7 @@ export const stainlesskitchenproducts: Product[] = [
     subCategory: "stainless-kitchen",
     price: 13701600,
     description: "2 doors To keep fruits, vegetables, milk, etc Suitable for Hotel, Restaurant, Canteen, etc Dimensi PxLxT (cm) :74x70x205",
+    specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-93a5f5c1-2319-436d-9c42-9dda83341fec.png"
   },
   {
@@ -343,6 +370,7 @@ export const stainlesskitchenproducts: Product[] = [
     subCategory: "stainless-kitchen",
     price: 18453600,
     description: "4 doors To keep fruits, vegetables, milk, etc Suitable for Hotel, Restaurant, Canteen, etc Dimensi PxLxT (cm) :140x70x205",
+    specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-4ad02f23-f1c0-446d-b6e4-74cd84863230.png"
   },
   {
@@ -354,6 +382,7 @@ export const stainlesskitchenproducts: Product[] = [
     subCategory: "stainless-kitchen",
     price: 27086400,
     description: "6 doors To keep fruits, vegetables, milk, etc Suitable for Hotel, Restaurant, Canteen, etc Dimensi PxLxT (cm) :199,5x70x205",
+    specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-6498c4b2-1967-4d4d-8c1e-6d63c270e0b8.png"
   },
   {
@@ -365,6 +394,7 @@ export const stainlesskitchenproducts: Product[] = [
     subCategory: "stainless-kitchen",
     price: 11,
     description: "4 doors To keep fruits, vegetables, milk, etc Suitable for Hotel, Restaurant, Canteen, etc Dimensi PxLxT (cm) :140x82x205",
+    specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-c92a592c-70e2-41ba-928a-24f0897b9ee4.png"
   },
   {
@@ -376,6 +406,7 @@ export const stainlesskitchenproducts: Product[] = [
     subCategory: "stainless-kitchen",
     price: 11,
     description: "2 doors To keep frozen meat, seafood, chicken nuggets, french fries, etc Suitable for Hotel, Restaurant, Canteen, etc Dimensi PxLxT (cm) :74x70x205",
+    specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-93a5f5c1-2319-436d-9c42-9dda83341fec.png"
   },
   {
@@ -387,6 +418,7 @@ export const stainlesskitchenproducts: Product[] = [
     subCategory: "stainless-kitchen",
     price: 22017600,
     description: "4 doors To keep frozen meat, seafood, chicken nuggets, french fries, etc Suitable for Hotel, Restaurant, Canteen, etc Dimensi PxLxT (cm) :140x70x205",
+    specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-4ad02f23-f1c0-446d-b6e4-74cd84863230.png"
   },
   {
@@ -398,6 +430,7 @@ export const stainlesskitchenproducts: Product[] = [
     subCategory: "stainless-kitchen",
     price: 11,
     description: "6 doors To keep frozen meat, seafood, chicken nuggets, french fries, etc Suitable for Hotel, Restaurant, Canteen, etc Dimensi PxLxT (cm) :199,5x70x205",
+    specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
     image: "ttps://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-6498c4b2-1967-4d4d-8c1e-6d63c270e0b8.png"
   },
   {
@@ -409,8 +442,8 @@ export const stainlesskitchenproducts: Product[] = [
     subCategory: "stainless-kitchen",
     price: 17424000,
     description: "CFC Free Full body stainless steel Digital Temperature Control Removable drop-in air cooling system Automatic Defrost Poly coated evaporator Round corner design inside refrigerator (Easy to clean and hygiene) Adjustable feet GN Design Sliding acrylic cover Dimensi PxLxT (cm) :115x76x105",
+    specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-4450d6ff-7fbe-41f4-b2de-65623685174b.png"
-
   },
   {
     id: 39,
@@ -421,6 +454,7 @@ export const stainlesskitchenproducts: Product[] = [
     subCategory: "stainless-kitchen",
     price: 22968000,
     description: "CFC Free Full body stainless steel Digital Temperature Control Removable drop-in air cooling system Automatic Defrost Poly coated evaporator Round corner design inside refrigerator (Easy to clean and hygiene) Adjustable feet GN Design Sliding acrylic cover Dimensi PxLxT (cm) :181,5x76x105",
+    specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
     image: "ttps://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-3d2de3cb-fb48-417c-97bb-cd103347c8df.png"
   },
   {
@@ -432,261 +466,9 @@ export const stainlesskitchenproducts: Product[] = [
     subCategory: "stainless-kitchen",
     price: 12276000,
     description: "Stainless steel body Digital temperature control Push-pull refrigerant unit Draining system Self-closing door Wide round edge & cornes GN 1/1 container Adjustable feet GN Pan and cover included Dimensi PxLxT (cm) :104,5x70x85",
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-6c677f1f-b34b-4bc8-84db-1db7f3862e1b.png"
+    specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-8b94c3d7-2f3b-4c07-b3f2-1b1e3e061803.png"
   },
-  {
-    id: 41,
-    name: "GEA STAINLESS STEEL UNDER COUNTER CHILLER FOR SALADS & PIZZA SC-04-3D",
-    slug: "gea-stainless-steel-under-counter-chiller-for-salads-pizza-sc-04-3d",
-    brand: "GEA",
-    category: "stainless-kitchen",
-    subCategory: "stainless-kitchen",
-    price: 13860000,
-    description: "Stainless steel body Digital temperature control Push-pull refrigerant unit Draining system Self-closing door Wide round edge & cornes GN 1/1 container Adjustable feet GN Pan and cover included Dimensi PxLxT (cm) :136x70x85",
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-2fdfa6ce-67bf-4f2a-ab7c-54c05bbd8e8f.png"
-  },
-  {
-    id: 42,
-    name: "GEA ROLL-IN STAINLESS STEEL UPRIGHT CHILLER M-RW9U1F-T",
-    slug: "gea-roll-in-stainless-steel-upright-chiller-m-rw9u1f-t",
-    brand: "GEA",
-    category: "stainless-kitchen",
-    subCategory: "stainless-kitchen",
-    price: 33660000,
-    description: "Including GN Trolley size 2/1 1 door Dimensi PxLxT (mm) :905x982x2460",
-    image: "http://www.solusikitchen-maks.com/thumbs/GEA-M-RW9U1F-T.jpg"
-  },
-  {
-    id: 43,
-    name: "GEA ROLL-IN STAINLESS STEEL UPRIGHT FREEZER L-RW9U1F-T",
-    slug: "gea-roll-in-stainless-steel-upright-freezer-l-rw9u1f-t",
-    brand: "GEA",
-    category: "stainless-kitchen",
-    subCategory: "stainless-kitchen",
-    price: 11,
-    description: "Including GN Trolley size 2/1 1 door Dimensi PxLxT (mm) :905x982x2460",
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-8f8b2afb-2e9c-43e0-b9f3-7a744f0ceed6.png"
-  },
-  {
-    id: 44,
-    name: "GEA ROLL-IN STAINLESS STEEL UPRIGHT CHILLER M-RW9U2FF-T",
-    slug: "gea-roll-in-stainless-steel-upright-chiller-m-rw9u2ff-t",
-    brand: "GEA",
-    category: "stainless-kitchen",
-    subCategory: "stainless-kitchen",
-    price: 11,
-    description: "Including GN Trolley size 2/1 2 doors Dimensi PxLxT (mm) :1850x982x2460",
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-3ba96af5-837d-479d-a916-5f891d807020.png"
-  },
-  {
-    id: 45,
-    name: "GEA ROLL-IN STAINLESS STEEL UPRIGHT FREEZER L-RW9U2FF-T",
-    slug: "gea-roll-in-stainless-steel-upright-freezer-l-rw9u2ff-t",
-    brand: "GEA",
-    category: "stainless-kitchen",
-    subCategory: "stainless-kitchen",
-    price: 11,
-    description: "Including GN Trolley size 2/1 Dimensi PxLxT (mm) :1850x982x2460",
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-3ba96af5-837d-479d-a916-5f891d807020.png"
-  },
-  {
-    id: 46,
-    name: "GEA STAINLESS STEEL DOUGH RETARDER CABINET DRC-550-1D",
-    slug: "gea-stainless-steel-dough-retarder-cabinet-drc-550-1d",
-    brand: "GEA",
-    category: "stainless-kitchen",
-    subCategory: "stainless-kitchen",
-    price: 15840000,
-    description: "CFC Free Body made from stainless steel Adjustable feet Full bin sensor Ice size: 2 x 3 x 3 Can be used for continuous production Dimensi PxLxT (cm) :70x82x205",
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-f70ab59e-da53-4509-9cad-661e35fdc1d2.png"
-  },
-  {
-    id: 47,
-    name: "GEA ISLAND SALAD BAR RTS-1210L",
-    slug: "gea-island-salad-bar-rts-1210l",
-    brand: "GEA",
-    category: "stainless-kitchen",
-    subCategory: "stainless-kitchen",
-    price: 11,
-    description: "S/S GN pan 1/1 Digital Thermostat Front & side body material: Wood Colour: Walnut 4 castors with 2 stopper Sneeze guard + lamp Static cooling Dimensi PxLxT (cm) :121x76,6x133,8",
-    image: "http://www.solusikitchen-maks.com/thumbs/GEA-RTS-1210L.jpg"
-  },
-  {
-    id: 48,
-    name: "GEA ISLAND SALAD BAR RTS-1490L",
-    slug: "gea-island-salad-bar-rts-1490l",
-    brand: "GEA",
-    category: "stainless-kitchen",
-    subCategory: "stainless-kitchen",
-    price: 11,
-    description: "S/S GN pan 1/1 Digital Thermostat Front & side body material: Wood Colour: Walnut 4 castors with 2 stopper Sneeze guard + lamp Static cooling Dimensi PxLxT (cm) :149x76,6x133,8",
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-b9459ce2-356a-4f9e-8fb1-21cf319616e7.png"
-  },
-  {
-    id: 49,
-    name: "GEA ISLAND SALAD BAR RTS-2150L",
-    slug: "gea-island-salad-bar-rts-2150l",
-    brand: "GEA",
-    category: "stainless-kitchen",
-    subCategory: "stainless-kitchen",
-    price: 11,
-    description: "S/S GN pan 1/1 Digital Thermostat Front & side body material: Wood Colour: Walnut 4 castors with 2 stopper Sneeze guard + lamp Static cooling Dimensi PxLxT (cm) :215x76,6x133,8",
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-220a5ba9-567b-449e-9cb9-88b68685f56d.png"
-  },
-  {
-    id: 50,
-    name: "GEA TABLE TOP SALAD CASE RTW-67L",
-    slug: "gea-table-top-salad-case-rtw-67l",
-    brand: "GEA",
-    category: "stainless-kitchen",
-    subCategory: "stainless-kitchen",
-    price: 7524000,
-    description: "Thermostat digital Fan cooling system Curve glass door Include 8 pcs GN 1/6-4 Dimensi PxLxT (cm) :76.5x61x34",
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-dc22afc0-6a15-4f79-b27a-03eb18032ecf.png"
-  },
-  {
-    id: 51,
-    name: "GEA STAINLESS STEEL COUNTER TOP SALAD CASE STC-120",
-    slug: "gea-stainless-steel-counter-top-salad-case-stc-120",
-    brand: "GEA",
-    category: "stainless-kitchen",
-    subCategory: "stainless-kitchen",
-    price: 5876640,
-    description: "Digital controller Stainless steel body High destiny insulation Embraco compressor Static cooling Dimensi PxLxT (cm) :120x33,5x43",
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-7ab2294e-83a9-4b3a-9179-5da741912643.png"
-  },
-  {
-    id: 52,
-    name: "GEA STAINLESS STEEL COUNTER TOP SALAD CASE STC-142",
-    slug: "gea-stainless-steel-counter-top-salad-case-stc-142",
-    brand: "GEA",
-    category: "stainless-kitchen",
-    subCategory: "stainless-kitchen",
-    price: 6296400,
-    description: "Digital controller Stainless steel body High destiny insulation Embraco compressor Static cooling Dimensi PxLxT (cm) :142x33,5x43",
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-7ab2294e-83a9-4b3a-9179-5da741912643.png"
-  },
-  {
-    id: 53,
-    name: "GEA STAINLESS STEEL COUNTER TOP SALAD CASE STC-150",
-    slug: "gea-stainless-steel-counter-top-salad-case-stc-150",
-    brand: "GEA",
-    category: "stainless-kitchen",
-    subCategory: "stainless-kitchen",
-    price: 6280560,
-    description: "Digital controller Stainless steel body High destiny insulation Embraco compressor Static cooling Dimensi PxLxT (cm) :150x33,5x43",
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-7ab2294e-83a9-4b3a-9179-5da741912643.png"
-  },
-  {
-    id: 54,
-    name: "GEA STAINLESS STEEL COUNTER TOP SALAD CASE STC-180",
-    slug: "gea-stainless-steel-counter-top-salad-case-stc-180",
-    brand: "GEA",
-    category: "stainless-kitchen",
-    subCategory: "stainless-kitchen",
-    price: 7128000,
-    description: "Digital controller Stainless steel body High destiny insulation Embraco compressor Static cooling Dimensi PxLxT (cm) :180x33,5x43",
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-7ab2294e-83a9-4b3a-9179-5da741912643.png"
-  },
-  {
-    id: 55,
-    name: "GEA STAINLESS STEEL COUNTER TOP SALAD CASE STC-188",
-    slug: "gea-stainless-steel-counter-top-salad-case-stc-188",
-    brand: "GEA",
-    category: "stainless-kitchen",
-    subCategory: "stainless-kitchen",
-    price: 7310160,
-    description: "Digital controller Stainless steel body High destiny insulation Embraco compressor Static cooling Dimensi PxLxT (cm) :188,5x33,8x43",
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-7ab2294e-83a9-4b3a-9179-5da741912643.png"
-  },
-  {
-    id: 56,
-    name: "GEA STAINLESS STEEL BLAST CHILLER & SHOCK FREEZER AK08-D",
-    slug: "gea-stainless-steel-blast-chiller-shock-freezer-ak08-d",
-    brand: "GEA",
-    category: "stainless-kitchen",
-    subCategory: "stainless-kitchen",
-    price: 11,
-    description: "Blast chiller : reduce temp. from +90°C to +3°C in 90 minutes Shock freezer : reduce temp. from +90°C to -18°C in 240 minutes Dimensi PxLxT (cm) :79x80x12",
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-8f45ffa5-cd69-4e68-ab42-a0b65e248241.png"
-  },
-  {
-    id: 57,
-    name: "GEA STAINLESS STEEL BLAST CHILLER & SHOCK FREEZER AK11-D",
-    slug: "gea-stainless-steel-blast-chiller-shock-freezer-ak11-d",
-    brand: "GEA",
-    category: "stainless-kitchen",
-    subCategory: "stainless-kitchen",
-    price: 11,
-    description: "Blast chiller : reduce temp. from +90°C to +3°C in 90 minutes Shock freezer : reduce temp. from +90°C to -18°C in 240 minutes Dimensi PxLxT (cm) :79x80x168",
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-eee2c2cf-645a-402b-b36a-9ecd5df33fa7.png"
-  },
-  {
-    id: 58,
-    name: "GEA STAINLESS STEEL BLAST CHILLER & SHOCK FREEZER AK15-D",
-    slug: "gea-stainless-steel-blast-chiller-shock-freezer-ak15-d",
-    brand: "GEA",
-    category: "stainless-kitchen",
-    subCategory: "stainless-kitchen",
-    price: 11,
-    description: "Blast chiller : reduce temp. from +90°C to +3°C in 90 minutes Shock freezer : reduce temp. from +90°C to -18°C in 240 minutes Dimensi PxLxT (cm) :79x80x195",
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-eee2c2cf-645a-402b-b36a-9ecd5df33fa7.png"
-  },
-  {
-    id: 59,
-    name: "GEA SHOWCASE (POULTRY DRY CABINET) EXPO FPR-1500",
-    slug: "gea-showcase-poultry-dry-cabinet-expo-fpr-1500",
-    brand: "GEA",
-    category: "stainless-kitchen",
-    subCategory: "stainless-kitchen",
-    price: 54648000,
-    description: "Digital temperature controller Low-E door glass (Anti fog) Interior LED lamp",
-    image: "hhttps://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-83b6dfc7-481c-4332-a4b1-b3ad3734e372.png"
-  },
-  {
-    id: 60,
-    name: "GEA BLAST FREEZER FORCED AIR-PLUG IN T-26D",
-    slug: "gea-blast-freezer-forced-air-plug-in-t-26d",
-    brand: "GEA",
-    category: "stainless-kitchen",
-    subCategory: "stainless-kitchen",
-    price: 11,
-    description: "Thick floor Wall thickness 10 cm Trolley size : 47 x 62 140 cm (12 Pan, size 40 x 60 cm) 3 Turbo blower + 1 Trolley Dimensi PxLxT (cm) :89x133x186.5",
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-2396001a-fb37-4bf8-8a93-1d11ef2c8d86.png"
-  },
-  {
-    id: 61,
-    name: "GEA S/S VACUUM DRY MACHINE VDD-15",
-    slug: "gea-s-s-vacuum-dry-machine-vdd-15",
-    brand: "GEA",
-    category: "stainless-kitchen",
-    subCategory: "stainless-kitchen",
-    price: 313632000,
-    description: "Stainless steel material Production capacity 15 kg/2 hours Shelf: 6+1 pcs",
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-a95ecb0a-610a-421a-9b20-7d319fd0219b.png"
-  },
-  {
-    id: 62,
-    name: "GEA S/S VACUUM DRY MACHINE VDD-30",
-    slug: "gea-s-s-vacuum-dry-machine-vdd-30",
-    brand: "GEA",
-    category: "stainless-kitchen",
-    subCategory: "stainless-kitchen",
-    price: 752400000,
-    description: "Stainless steel material Production capacity 30 kg/3 hours Shelf: 12 pcs",
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-64c8d4d3-9553-4392-8a8d-626febff49e8.png"
-  },
-  {
-    id: 63,
-    name: "GAS DEEP FRYER GETRA GF-20-FS",
-    slug: "gas-deep-fryer-getra-gf-20-fs",
-    brand: "GETRA",
-    category: "stainless-kitchen",
-    subCategory: "stainless-kitchen",
-    price: 11088000,
-    description: "1 Tangki @20 liter 2 Keranjang Temperatur stabil Saluran pembuangan Thermostat Fitur keamanan thermostat (memutuskan arus listrik ketika suhu minyak mencapai 230C) Burner hemat Dimensi PxLxT (cm) :39x70x98",
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-9caaceea-0a19-4b30-8429-d8fe463c2575.png"
-  }
 ];
 
 
