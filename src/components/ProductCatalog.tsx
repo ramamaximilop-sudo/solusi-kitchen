@@ -110,14 +110,19 @@ export const ProductCatalog = () => {
     "Modena"
   ];
 
-  const filteredProducts = useMemo(() => {
+const filteredProducts = useMemo(() => {
     return PRODUCTS.filter(p => {
-      const catMatch = selectedCategory === "All" || p.category === selectedCategory;
-      const brandMatch = selectedBrand === "All" || p.brand === selectedBrand;
+      const catMatch = selectedCategory === "All" || 
+                       p.category.toLowerCase() === selectedCategory.toLowerCase();
+      
+      const brandMatch = selectedBrand === "All" || 
+                         p.brand.toLowerCase() === selectedBrand.toLowerCase();
+      
       const searchMatch = searchQuery === "" || 
         p.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
         p.brand.toLowerCase().includes(searchQuery.toLowerCase()) ||
         p.category.toLowerCase().includes(searchQuery.toLowerCase());
+
       return catMatch && brandMatch && searchMatch;
     });
   }, [selectedCategory, selectedBrand, searchQuery]);
