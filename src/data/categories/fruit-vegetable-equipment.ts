@@ -1,6 +1,5 @@
 import { Product } from '../type';
 
-
 export const fruitVegetableProducts: Product[] = [
   {
     id: 1,
