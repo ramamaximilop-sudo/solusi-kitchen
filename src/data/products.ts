@@ -1,5 +1,5 @@
 import { Product } from './type';
-import { freezerProducts } from './categories/freezer';
+import { freezerProducts } from './categories/freezer-equipment';
 import { displayCoolerProducts } from './categories/display-cooler';
 import { dispenserRefrigeratorProducts } from './categories/dispenser-refrigerator';
 import { iceMakerProducts } from './categories/ice-maker';
