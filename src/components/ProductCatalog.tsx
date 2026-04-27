@@ -74,7 +74,7 @@ export const ProductCatalog = () => {
     "All",
     "FREEZER",
     "DISPLAY COOLER",
-    "DISPENSER & REFRIGERATOR",
+    "dispenser refrigerator",
     "ICE MAKER",
     "ICE CREAM EQUIPMENT",
     "S/S KITCHEN REFRIGERATION",
