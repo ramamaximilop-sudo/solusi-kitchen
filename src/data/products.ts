@@ -9,7 +9,7 @@ import { coldRoomProducts } from './categories/cold-room-storage';
 import { miscellaneousProducts } from './categories/miscellaneous';
 import { medicalProducts } from './categories/medical-refrigation';
 import { foodCookingProducts } from './categories/food-cooking-equipment';
-import { meatFishProducts } from './categories/Meat-Fish-Equipmennt';
+import { meatFishProducts } from './categories/meat-fish-equipmennt';
 import { fruitVegetableProducts } from './categories/fruit-vegetable-equipment';
 import { barHotelProducts } from './categories/bar-hotel-equipment';
 import { bakeryNoodleProducts } from './categories/bakery-noodle-equipment';
