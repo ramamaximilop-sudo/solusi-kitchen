@@ -467,7 +467,7 @@ export const meatFishProducts: Product[] = [
     price: 92664000,
     description: "Alat untuk menghancurkan tulang hewan menjadi partikel kecil (6 mm). Plat yang di cat. Kapasitas 200~400Kg/jam.",
     specs: { capacity: "200~400Kg/jam", wattage: "", dimension: "100x79x150 cm", material: "" },
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/fish%20and%20Meat%20Equipment/grok-image-3f794f2a-5262-4875-acb6-c2b14d115d83.pn"
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/fish%20and%20Meat%20Equipment/grok-image-3f794f2a-5262-4875-acb6-c2b14d115d83.png"
   },
   {
     id: 40,
