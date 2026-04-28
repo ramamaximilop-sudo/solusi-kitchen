@@ -325,7 +325,7 @@ export const barHotelProducts: Product[] = [
     "price": 1377600,
     "description": "",
     "specs": { "capacity": "", "wattage": "", "dimension": "", "material": "" },
-    "image": ""
+    "image": "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Bar%20and%20Hotel%20Equipment/grok-image-eb9fb88b-d0cd-4c8c-b858-5e676be8c3e9.png"
   },
   {
     "id": 28,
