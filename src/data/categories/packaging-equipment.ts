@@ -672,7 +672,7 @@ export const packagingProducts: Product[] =
     price: 256920,
     description: "Tanyakan langsung menuju WhatsApp ya",
     specs: { capacity: "", wattage: "", dimension: "", material: "" },
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Packaging%20Equipment/grok-image-487372ba-62ba-4b72-b7e1-38e93234d74c.png"
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Bar%20and%20Hotel%20Equipment/grok-image-18b856f6-bb04-4737-9327-437bde53adab.png"
   },
 
   { 
