@@ -383,7 +383,7 @@ export const coldRoomProducts: Product[] = [
     price: 11,
     description: "Dimensi: 220x180x220. Kabinet pajangan minuman dingin dan gudang convenience store. Tebal panel 75 mm, 5 rak.",
     specs: { dimension: "220x180x220", fiturPanel: "Tebal panel 75 mm, 5 susun rak rata", fiturSistemPendingin: "Refrigerant R 404 a, Remote Condensing Unit" },
-    image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837"
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Cold%20Room%20Storage/grok-image-e78b5f7b-963e-4de3-aca6-fc8ac5869d90.png"
   },
   {
     id: 33,
