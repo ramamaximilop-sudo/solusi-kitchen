@@ -674,6 +674,7 @@ export const iceCreamProducts: Product[] = [
     description: "Processing time about 4 hour Power 5 HP Dimensi PxLxT (mm) :1500x1600x2200 Kapasitas 1000L",
     specs: { dimension: "1500x1600x2200 mm", wattage: "5 HP" },
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-74c8e37e-f6a9-4930-bb92-c1c6796089c8.png"
+  },
   {
     id: 57,
     name: "GEA CONTINUOUS ICE CREAM FREEZER CF-50LPH",
