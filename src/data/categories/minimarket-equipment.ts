@@ -11,7 +11,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     price: 19800000,
     description: "Tanyakan langsung melalui WhatsApp",
     specs: ["Capacity: -", "Wattage: -", "Dimension: -", "Material: -"],
-    image: ""
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-6a412e86-4a3f-4a91-847f-2ee87c036f1a.png"
   },
   {
     id: 2,
@@ -455,7 +455,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     price: 0,
     description: "Tanyakan langsung melalui WhatsApp",
     specs: ["Capacity: -", "Wattage: -", "Dimension: -", "Material: -"],
-    image: ""
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-b6acb520-2477-4f9b-9440-7414fb3b103c.png"
   },
   {
     id: 39,
@@ -503,7 +503,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     price: 0,
     description: "Tanyakan langsung melalui WhatsApp",
     specs: ["Capacity: -", "Wattage: -", "Dimension: -", "Material: -"],
-    image: ""
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-1d99d049-673c-4ec6-9f6f-c8f44c0fee78.png"
   },
   {
     id: 43,
@@ -623,7 +623,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     price: 0,
     description: "Tanyakan langsung melalui WhatsApp",
     specs: ["Capacity: -", "Wattage: -", "Dimension: -", "Material: -"],
-    image: ""
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-24999b17-1355-458a-9f0f-26608cec1e0a.png"
   },
   {
     id: 53,
@@ -695,7 +695,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     price: 0,
     description: "Tanyakan langsung melalui WhatsApp",
     specs: ["Capacity: -", "Wattage: -", "Dimension: -", "Material: -"],
-    image: ""
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-bc0f71d9-7682-4c91-909d-80af6a6df028.png"
   },
   {
     id: 59,
@@ -745,18 +745,6 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     specs: ["Capacity: -", "Wattage: -", "Dimension: -", "Material: -"],
     image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-41121646-d059-4085-b05c-f4650e092dad.png"
   },
-  {
-    id: 63,
-    name: "GEA ROSE NT 3 Doors (Chiller)",
-    slug: "gea-rose-nt-3-doors-chiller",
-    brand: "GEA",
-    category: "SUPERMARKET EQUIPMENT",
-    subCategory: "SUPERMARKET EQUIPMENT",
-    price: 0,
-    description: "Tanyakan langsung melalui WhatsApp",
-    specs: ["Capacity: -", "Wattage: -", "Dimension: -", "Material: -"],
-    image: ""
-  }
 ];
 
     
