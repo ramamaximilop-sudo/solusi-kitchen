@@ -132,7 +132,7 @@ export const iceCreamProducts: Product[] = [
     price: 87912000,
     description: "Interior light CFC Free Digital controller Heated glass using Forced air ventilation system 8 HOLE Dimensi PxLxT (cm) :126x116x148,5",
     specs: { dimension: "126x116x148,5 cm", wattage: "-", capacity: "8 HOLE" },
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-8b8b8b8b-8b8b-8b8b-8b8b-8b8b8b8b8b8b.png"
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-d274e80f-ca85-46d0-9513-80afe61f602a.png"
   },
   {
     id: 12,
