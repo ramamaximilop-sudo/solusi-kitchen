@@ -84,7 +84,7 @@ export const iceCreamProducts: Product[] = [
     price: 25185600,
     description: "Interior Lamp CFC Free Static cooling system Choices of bin made from stainless steel or polycarbonate Heated Glass Dimensi PxLxT (cm) :120x54x79",
     specs: { dimension: "120x54x79 cm", wattage: "-", capacity: "-" },
-    image: ""
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-7cf6470f-d164-45a5-814a-018c0692e73d.png"
   },
   {
     id: 8,
@@ -132,7 +132,7 @@ export const iceCreamProducts: Product[] = [
     price: 87912000,
     description: "Interior light CFC Free Digital controller Heated glass using Forced air ventilation system 8 HOLE Dimensi PxLxT (cm) :126x116x148,5",
     specs: { dimension: "126x116x148,5 cm", wattage: "-", capacity: "8 HOLE" },
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-8b8b8b8b-8b8b-8b8b-8b8b-8b8b8b8b8b8b.pnghttps://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-d274e80f-ca85-46d0-9513-80afe61f602a.png"
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-8b8b8b8b-8b8b-8b8b-8b8b-8b8b8b8b8b8b.png"
   },
   {
     id: 12,
@@ -156,7 +156,7 @@ export const iceCreamProducts: Product[] = [
     price: 102168000,
     description: "Interior light CFC Free Digital controller Heated glass using Forced air ventilation system 18 PAN Dimensi PxLxT (cm) :175x116x148,5",
     specs: { dimension: "175x116x148,5 cm", wattage: "-", capacity: "18 PAN" },
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-4b345823-63ae-4a43-9c3a-6e9f9dda702d.pnghttps://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-d274e80f-ca85-46d0-9513-80afe61f602a.png"
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-4b345823-63ae-4a43-9c3a-6e9f9dda702d.png"
   },
   {
     id: 14,
@@ -180,7 +180,7 @@ export const iceCreamProducts: Product[] = [
     price: 121176000,
     description: "Interior light CFC Free Digital controller Heated glass using Forced air ventilation system 20 PAN Dimensi PxLxT (cm) :192x116x148,5",
     specs: { dimension: "192x116x148,5 cm", wattage: "-", capacity: "20 PAN" },
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-4b345823-63ae-4a43-9c3a-6e9f9dda702d.pnghttps://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-d274e80f-ca85-46d0-9513-80afe61f602a.png"
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-4b345823-63ae-4a43-9c3a-6e9f9dda702d.png"
   },
   {
     id: 16,
@@ -253,7 +253,7 @@ export const iceCreamProducts: Product[] = [
     price: 99792000,
     description: "Interior light CFC Free Digital controller Heated glass using Forced air ventilation system 16 PAN Dimensi PxLxT (cm) :156x109x120",
     specs: { dimension: "156x109x120 cm", wattage: "-" },
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-d274e80f-ca85-46d0-9513-80afe61f602a.pnghttps://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-bd46d7fc-5008-459b-837a-6ed91dacd00e.png"
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-d274e80f-ca85-46d0-9513-80afe61f602a.png"
   },
   {
     id: 22,
@@ -265,7 +265,7 @@ export const iceCreamProducts: Product[] = [
     price: 110088000,
     description: "Interior light CFC Free Digital controller Heated glass using Forced air ventilation system 10 HOLE Dimensi PxLxT (cm) :156x109x120",
     specs: { dimension: "156x109x120 cm", wattage: "-" },
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-d274e80f-ca85-46d0-9513-80afe61f602a.pnghttps://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-bd46d7fc-5008-459b-837a-6ed91dacd00e.png"
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-d274e80f-ca85-46d0-9513-80afe61f602a.png"
   },
   {
     id: 23,
@@ -277,7 +277,7 @@ export const iceCreamProducts: Product[] = [
     price: 106920000,
     description: "Interior light CFC Free Digital controller Heated glass using Forced air ventilation system 18 PAN Dimensi PxLxT (cm) :172x109x120",
     specs: { dimension: "172x109x120 cm", wattage: "-" },
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-d274e80f-ca85-46d0-9513-80afe61f602a.pnghttps://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-bd46d7fc-5008-459b-837a-6ed91dacd00e.png"
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-d274e80f-ca85-46d0-9513-80afe61f602a.png"
   },
   {
     id: 24,
@@ -289,7 +289,7 @@ export const iceCreamProducts: Product[] = [
     price: 120384000,
     description: "Interior light CFC Free Digital controller Heated glass using Forced air ventilation system 12 HOLE Dimensi PxLxT (cm) :172x109x120",
     specs: { dimension: "172x109x120 cm", wattage: "-" },
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-d274e80f-ca85-46d0-9513-80afe61f602a.pnghttps://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-bd46d7fc-5008-459b-837a-6ed91dacd00e.png"
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-d274e80f-ca85-46d0-9513-80afe61f602a.png"
   },
   {
     id: 25,
@@ -301,7 +301,7 @@ export const iceCreamProducts: Product[] = [
     price: 128304000,
     description: "Interior light CFC Free Digital controller Heated glass using Forced air ventilation system 20 PAN Dimensi PxLxT (cm) :189x109x120",
     specs: { dimension: "189x109x120 cm", wattage: "-" },
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-d274e80f-ca85-46d0-9513-80afe61f602a.pnghttps://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-bd46d7fc-5008-459b-837a-6ed91dacd00e.png"
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-d274e80f-ca85-46d0-9513-80afe61f602a.png"
   },
   {
     id: 26,
@@ -313,7 +313,7 @@ export const iceCreamProducts: Product[] = [
     price: 144144000,
     description: "Interior light CFC Free Digital controller Heated glass using Forced air ventilation system 12 HOLE Dimensi PxLxT (cm) :189x109x120",
     specs: { dimension: "189x109x120 cm", wattage: "-" },
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-d274e80f-ca85-46d0-9513-80afe61f602a.pnghttps://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-bd46d7fc-5008-459b-837a-6ed91dacd00e.png "
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-d274e80f-ca85-46d0-9513-80afe61f602a.png"
   },
   {
     id: 27,
@@ -325,7 +325,7 @@ export const iceCreamProducts: Product[] = [
     price: 142560000,
     description: "Interior light CFC Free Digital controller Heated glass using Forced air ventilation system 24 PAN Dimensi PxLxT (cm) :220x109x120",
     specs: { dimension: "220x109x120 cm", wattage: "-" },
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-d274e80f-ca85-46d0-9513-80afe61f602a.pnghttps://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-bd46d7fc-5008-459b-837a-6ed91dacd00e.png"
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-d274e80f-ca85-46d0-9513-80afe61f602a.png"
   },
   {
     id: 28,
@@ -337,7 +337,7 @@ export const iceCreamProducts: Product[] = [
     price: 163944000,
     description: "Interior light CFC Free Digital controller Heated glass using Forced air ventilation system 16 HOLE Dimensi PxLxT (cm) :220x109x120",
     specs: { dimension: "220x109x120 cm", wattage: "-" },
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-d274e80f-ca85-46d0-9513-80afe61f602a.pnghttps://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-bd46d7fc-5008-459b-837a-6ed91dacd00e.png "
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-d274e80f-ca85-46d0-9513-80afe61f602a.png"
   },
   {
     id: 29,
@@ -589,7 +589,7 @@ export const iceCreamProducts: Product[] = [
     price: 130125600,
     description: "Stainless steel body Double stage Dimensi PxLxT (mm) :880x785x1100 300L/jam",
     specs: { dimension: "880x785x1100 mm", capacity: "300L/jam" },
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-f6da0d22-3fa8-495d-929f-b746d09f964b.pnghttps://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-37a3b559-de02-4d26-be4a-ce6a2a27747b.png"
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-f6da0d22-3fa8-495d-929f-b746d09f964b.png"
   },
   {
     id: 50,
@@ -613,7 +613,7 @@ export const iceCreamProducts: Product[] = [
     price: 236174400,
     description: "Stainless steel body Double gate Dimensi PxLxT (mm) :1190x990x1345 1000L/jam",
     specs: { dimension: "1190x990x1345 mm", capacity: "1000L/jam" },
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-0174dc60-c62b-4831-affa-fc1d327eb2c4.pnghttps://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-37a3b559-de02-4d26-be4a-ce6a2a27747b.png"
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-0174dc60-c62b-4831-affa-fc1d327eb2c4.png"
   },
   {
     id: 52,
@@ -661,7 +661,7 @@ export const iceCreamProducts: Product[] = [
     price: 156182400,
     description: "Processing time about 4 hour Power 2.75 HP Dimensi PxLxT (mm) :1250x1000x1850 Kapasitas 500L",
     specs: { dimension: "1250x1000x1850 mm", wattage: "2.75 HP" },
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-74c8e37e-f6a9-4930-bb92-c1c6796089c8.pnghttps://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-74c8e37e-f6a9-4930-bb92-c1c6796089c8.png"
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-74c8e37e-f6a9-4930-bb92-c1c6796089c8.png"
   },
   {
     id: 56,
@@ -673,8 +673,7 @@ export const iceCreamProducts: Product[] = [
     price: 195228000,
     description: "Processing time about 4 hour Power 5 HP Dimensi PxLxT (mm) :1500x1600x2200 Kapasitas 1000L",
     specs: { dimension: "1500x1600x2200 mm", wattage: "5 HP" },
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-74c8e37e-f6a9-4930-bb92-c1c6796089c8.pnghttps://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-74c8e37e-f6a9-4930-bb92-c1c6796089c8.png"
-  },
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-74c8e37e-f6a9-4930-bb92-c1c6796089c8.png"
   {
     id: 57,
     name: "GEA CONTINUOUS ICE CREAM FREEZER CF-50LPH",
