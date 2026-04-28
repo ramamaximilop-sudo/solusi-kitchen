@@ -469,7 +469,7 @@ export const iceCreamProducts: Product[] = [
     price: 16790400,
     description: "Bebas CFC Stainless steel cabinet TECUMSEH compressor Air cooled condenser Digital Thermostat 80 pcs/Jam Dimensi PxLxT (cm) :60x40x96",
     specs: { dimension: "60x40x96 cm", capacity: "80 pcs/Jam" },
-    image: ""
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-822fff1c-0426-4ffb-9e16-ab5ff341b65d.png"
   },
   {
     id: 40,
@@ -685,7 +685,7 @@ export const iceCreamProducts: Product[] = [
     price: 11,
     description: "CFC Free Full Stainless Steel body Piston Feed Pump Wiper Spiral Digital Control System Using Maneurop compressor Cooling condenser: Water Dimensi PxLxT (mm) :800x1200x1200",
     specs: { dimension: "800x1200x1200 mm", wattage: "-" },
-    image: ""
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice%20Cream%20equipment/grok-image-b6a99fa5-99d3-4bb0-9973-44a3b24366d0.png"
   },
   {
     id: 58,
