@@ -23,7 +23,7 @@ export const iceMakerProducts: Product[] = [
     price: 582120000,
     description: "CFC Free\n \tWater Cooled Fresh water condensor\n \tStainless Steel body\n \tAdjustable ice thickness i.e.; @thin(1,5mm) : suitable for meat processing usage; @thick(2,2mm) : Suitable for fish processing usage\n \tDimensi PxLxT (cm) :272x188x161,5\n \tHarga belum termasuk BIN (GAC-75) seharga Rp.34.056.000 [2000x2000x2500]",
     specs: { capacity: "60 kg/day", wattage: "450 W", dimension: "272x188x161,5 cm", material: "Stainless Steel" },
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice-maker/grok-image-3b8c9d0e-4f5a-4b6c-8d9e-0f1a2b3c4d5e.png"
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/display%20COOLER/grok-image-d2305fcc-343b-4ed9-8dda-969932423150.png"
   },
   {
     id: 153,
@@ -181,7 +181,7 @@ export const iceMakerProducts: Product[] = [
     price: 435600000,
     description: "CFC Free\n \tSea water condensor\n \tBody made from stainless steel\n \tKey feature to catch fish withou worry of ice shortage\n \tDry ice temperature ± -10~-15°C\n \tDimensi PxLxT (cm) :580x225x140",
     specs: { capacity: "60 kg/day", wattage: "450 W", dimension: "580x225x140 cm", material: "Stainless Steel" },
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice-maker/grok-image-580x225x140.png"
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/display%20COOLER/grok-image-3d73fc9e-1651-4e0e-a2cb-20d08a933bdb.png"
   },
   {
     id: 167,
@@ -193,7 +193,7 @@ export const iceMakerProducts: Product[] = [
     price: 601920000,
     description: "CFC Free\n \tSea water condensor\n \tBody made from stainless steel\n \tKey feature to catch fish withou worry of ice shortage\n \tDry ice temperature ± -10~-15°C\n \tDimensi PxLxT (cm) :800x225x160",
     specs: { capacity: "60 kg/day", wattage: "450 W", dimension: "800x225x160 cm", material: "Stainless Steel" },
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice-maker/grok-image-800x225x160.png"
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/display%20COOLER/grok-image-3d73fc9e-1651-4e0e-a2cb-20d08a933bdb.png"
   },
   {
     id: 168,
@@ -205,7 +205,7 @@ export const iceMakerProducts: Product[] = [
     price: 673200000,
     description: "CFC Free\n \tSea water condensor\n \tBody made from stainless steel\n \tKey feature to catch fish withou worry of ice shortage\n \tDry ice temperature ± -10~-15°C\n \tDimensi PxLxT (cm) :870x225x160",
     specs: { capacity: "60 kg/day", wattage: "450 W", dimension: "870x225x160 cm", material: "Stainless Steel" },
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice-maker/grok-image-870x225x160.png"
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/display%20COOLER/grok-image-3d73fc9e-1651-4e0e-a2cb-20d08a933bdb.png"
   },
   {
     id: 169,
