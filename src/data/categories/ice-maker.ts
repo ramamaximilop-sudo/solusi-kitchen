@@ -95,7 +95,7 @@ export const iceMakerProducts: Product[] = [
     price: 1009800000,
     description: "CFC Free\n \tControl panel by PLC SIEMEN\n \tCompressor by BITZER\n \tWater condensor, including cooling tower\n \tStainless steel body\n \tIce production capacity will be affected by ambient temperature, water input temperature (Recommended 20°C), water purity, and several other factors\n \tDimensi PxLxT (cm) :573x225x213",
     specs: { capacity: "60 kg/day", wattage: "450 W", dimension: "573x225x213 cm", material: "Stainless Steel" },
-    image: "ttps://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice-maker/grok-image-ead8d648-67f5-4c93-a520-db252c0a3873.png"
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/ice-maker/grok-image-ead8d648-67f5-4c93-a520-db252c0a3873.png"
   },
   {
     id: 160,
