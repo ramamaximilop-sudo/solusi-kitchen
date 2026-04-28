@@ -659,7 +659,7 @@ export const minimarketSupermarketEquipmentProducts: Product[] = [
     price: 0,
     description: "Tanyakan langsung melalui WhatsApp",
     specs: ["Capacity: -", "Wattage: -", "Dimension: -", "Material: -"],
-    image: ""
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/supermarket%20Equipment/grok-image-24999b17-1355-458a-9f0f-26608cec1e0a.png"
   },
   {
     id: 56,
