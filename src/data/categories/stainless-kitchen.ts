@@ -83,7 +83,7 @@ export const stainlesskitchenproducts: Product[] = [
     price: 13068000,
     description: "Lampu LED CFC Gratis Eksterior dan interior baja stainless penuh Sistem lemari pendingin yang bisa dilepas Kompresor EMBRACO Kontrol suhu digital Katup ekspansi elektronik Pencairan gas panas otomatis dengan sistem penguapan sendiri Evaporator berlapis poli (mencegah korosi dan memastikan keamanan makanan) Pemanas pintu Pemanas pintu dan gasket yang dapat dilepas untuk memudahkan perawatan Braket & geser baki S / S yang dapat dilepas Ruang dalam dengan desain sudut bulat untuk memudahkan pembersihan Kastor dan kunci Desain ukuran GN (GN 1/1) Dimensi PxLxT (cm): 95,5x70x85",
     specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-87cd3bd6-9446-47ef-9bc7-eb2ad3611caf.pngg"
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-87cd3bd6-9446-47ef-9bc7-eb2ad3611caf.png"
   },
   {
     id: 9,
@@ -431,7 +431,7 @@ export const stainlesskitchenproducts: Product[] = [
     price: 11,
     description: "6 doors To keep frozen meat, seafood, chicken nuggets, french fries, etc Suitable for Hotel, Restaurant, Canteen, etc Dimensi PxLxT (cm) :199,5x70x205",
     specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
-    image: "ttps://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-6498c4b2-1967-4d4d-8c1e-6d63c270e0b8.png"
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-6498c4b2-1967-4d4d-8c1e-6d63c270e0b8.png"
   },
   {
     id: 38,
@@ -455,7 +455,7 @@ export const stainlesskitchenproducts: Product[] = [
     price: 22968000,
     description: "CFC Free Full body stainless steel Digital Temperature Control Removable drop-in air cooling system Automatic Defrost Poly coated evaporator Round corner design inside refrigerator (Easy to clean and hygiene) Adjustable feet GN Design Sliding acrylic cover Dimensi PxLxT (cm) :181,5x76x105",
     specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
-    image: "ttps://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-3d2de3cb-fb48-417c-97bb-cd103347c8df.png"
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-3d2de3cb-fb48-417c-97bb-cd103347c8df.png"
   },
   {
     id: 40,
@@ -467,7 +467,7 @@ export const stainlesskitchenproducts: Product[] = [
     price: 12276000,
     description: "Stainless steel body Digital temperature control Push-pull refrigerant unit Draining system Self-closing door Wide round edge & cornes GN 1/1 container Adjustable feet GN Pan and cover included Dimensi PxLxT (cm) :104,5x70x85",
     specs: { capacity: "", wattage: "", dimension: "", material: "Painted Steel & Glass" },
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-8b94c3d7-2f3b-4c07-b3f2-1b1e3e061803.png"
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Stainless%20kithcne/grok-image-87deb2f6-bdde-46e7-a0ad-498bdfcaeef8.png"
   },
 ];
 
