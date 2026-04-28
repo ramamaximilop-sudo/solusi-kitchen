@@ -148,7 +148,7 @@ export const foodCookingProducts: Product[] = [
     price: 11,
     description: "Panggangan plat datar (griddle) stainless steel untuk burger, steak, dan masakan tumis.",
     specs: { dimension: "60x80x35/47 cm", fiturPanel: "Flat Plate, Manual Ignitor", fiturSistemPendingin: "Gas Tekanan Rendah" },
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/food%20And%20cooking%20Equipment/GETRA-ET-GGR-60H..jpg"
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/food%20And%20cooking%20Equipment/grok-image-4b5fc3df-64ea-4aae-82e3-4afa7956296c.png"
   },
   {
     id: 19,
@@ -459,30 +459,6 @@ export const foodCookingProducts: Product[] = [
   },
   
  
-{
-    id: 69,
-    name: "GETRA GAS DEEP FRYER HGF-71",
-    slug: "getra-gas-deep-fryer-hgf-71",
-    brand: "GETRA",
-    category: "Food & Cooking Equipment",
-    subCategory: "Food & Cooking Equipment",
-    price: 11,
-    description: "Satu tangki kapasitas 5,5 liter. Satu keranjang (basket). Bodi stainless steel.",
-    specs: { dimension: "29x50x45 cm", fiturPanel: "Gas", fiturSistemPendingin: "Gas" },
-    image: "http://solusikitchen-maks.com/uploads/GETRA-HGF-71.jpg"
-  },
-  {
-    id: 70,
-    name: "GETRA GAS DEEP FRYER HGF-72",
-    slug: "getra-gas-deep-fryer-hgf-72",
-    brand: "GETRA",
-    category: "Food & Cooking Equipment",
-    subCategory: "Food & Cooking Equipment",
-    price: 11,
-    description: "Dua tangki kapasitas 2x5,5 liter. Dua keranjang mandiri. Bodi stainless steel.",
-    specs: { dimension: "55x50x45 cm", fiturPanel: "Gas", fiturSistemPendingin: "Gas" },
-    image: "http://solusikitchen-maks.com/uploads/GETRA-HGF-72.jpg"
-  },
   {
     id: 71,
     name: "GETRA GAS DEEP FRYER GF-71",
@@ -940,7 +916,7 @@ export const foodCookingProducts: Product[] = [
     price: 387600,
     description: "Casing stainless steel khusus untuk kompor induksi IC-1100. [cite: 14]",
     specs: { dimension: "N/A", fiturPanel: "Stainless Steel", fiturSistemPendingin: "N/A" },
-    image: "http://solusikitchen-maks.com/uploads/S/S-CIC-1100..jpg"
+    image: ""
   },
   {
     id: 131,
