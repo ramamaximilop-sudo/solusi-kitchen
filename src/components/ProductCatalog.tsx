@@ -5,7 +5,7 @@ import { Product, PRODUCTS } from "../data/products.ts";
 
 const ITEMS_PER_PAGE = 12;
 
-// 1. Komponen Skeleton Loading
+
 const ProductSkeleton = () => (
   <div className="bg-white border border-gray-100 flex flex-col shadow-sm rounded-lg overflow-hidden animate-pulse h-full">
     <div className="aspect-square bg-gray-50 flex items-center justify-center p-6 relative">
@@ -33,7 +33,7 @@ export const ProductCatalog = () => {
   
   const catalogTopRef = useRef<HTMLDivElement>(null);
 
-  // List kategori sesuai permintaanmu
+
   const categories = [
     "All",
     "FREEZER",
@@ -71,12 +71,12 @@ export const ProductCatalog = () => {
     setCurrentPage(1);
   }, [selectedCategory, selectedBrand, searchQuery]);
 
-  // Modal State
+
   const [isDetailModalOpen, setIsDetailModalOpen] = useState(false);
   const [isInquiryModalOpen, setIsInquiryModalOpen] = useState(false);
   const [activeProduct, setActiveProduct] = useState<Product | null>(null);
 
-  // Lock scroll saat modal buka
+
   useEffect(() => {
     if (isDetailModalOpen || isInquiryModalOpen || isFilterOpen) {
       document.body.style.overflow = 'hidden';
@@ -93,7 +93,7 @@ export const ProductCatalog = () => {
 
   const filteredProducts = useMemo(() => {
     return PRODUCTS.filter(p => {
-      // Bandingkan dengan lowercase untuk menghindari error typo kecil/besar
+ 
       const catMatch = selectedCategory === "All" || 
                        p.category?.toLowerCase() === selectedCategory.toLowerCase();
       const brandMatch = selectedBrand === "All" || 
