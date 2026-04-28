@@ -464,7 +464,7 @@ export const displayCoolerProducts: Product[] = [
     price:  0,
     description: "Tanyakan Langsung Menuju Whatsapp.",
     specs: { capacity: "", wattage: "", dimension: "::160x68x200", material: "high grade" },
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/display%20COOLER/grok-image-9c8e5b0c-7a3d-4f1b-9c8e-5b0c7a3d4f1b.png"
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/display%20COOLER/grok-image-c2dd230e-40bd-4348-bb0f-0d8df34989c3.png"
         },
         {id: 92,
     name: "GEA DISPLAY COOLER EXPO-1050AH/CN",
@@ -475,7 +475,7 @@ export const displayCoolerProducts: Product[] = [
     price:  0,
     description: "Tanyakan Langsung Menuju Whatsapp.",
     specs: { capacity: "", wattage: "", dimension: ":121x68x218", material: "high grade" },
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/display%20COOLER/grok-image-9c8e5b0c-7a3d-4f1b-9c8e-5b0c7a3d4f1b.png"
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/display%20COOLER/grok-image-5bb980e6-d3fc-4358-b82e-3cfa9448b764.png"
          },
             {id: 93,
     name: "GEA DISPLAY COOLER EXPO-800AH/CN",
@@ -486,7 +486,7 @@ export const displayCoolerProducts: Product[] = [
     price:  0,
     description: "Tanyakan Langsung Menuju Whatsapp.",
     specs: { capacity: "", wattage: "", dimension: ":106x68x200", material: "high grade" },
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/display%20COOLER/grok-image-9c8e5b0c-7a3d-4f1b-9c8e-5b0c7a3d4f1b.png"
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/display%20COOLER/grok-image-5bb980e6-d3fc-4358-b82e-3cfa9448b764.png"
          },
          {id: 94,
     name: "GEA DISPLAY COOLER EXPO-600AH/CN",
@@ -497,7 +497,7 @@ export const displayCoolerProducts: Product[] = [
     price:  0,
     description: "Tanyakan Langsung Menuju Whatsapp.",
     specs: { capacity: "", wattage: "", dimension: ":95x62,5x188", material: "high grade" },
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/display%20COOLER/grok-image-9c8e5b0c-7a3d-4f1b-9c8e-5b0c7a3d4f1b.png"
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/display%20COOLER/grok-image-5bb980e6-d3fc-4358-b82e-3cfa9448b764.png"
          },
          {id: 95,
     name: "GEA DISPLAY COOLER EXPO-300AH/CN",
