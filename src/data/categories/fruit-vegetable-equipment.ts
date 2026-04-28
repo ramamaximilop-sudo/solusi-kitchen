@@ -419,7 +419,7 @@ export const fruitVegetableProducts: Product[] = [
     price: 2130000,
     description: "Kapasitas 60 ~ 80 KG/Jam. Full besi anti karat.",
     specs: { dimension: "52x33x56 cm", fiturPanel: "Besi Anti Karat", fiturSistemPendingin: "" },
-    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Fruit%20&%20vegetable%20Equipment/grok-image-43f3529b-7b05-4c5d-8d54-baa11b7adcb8.pnghttp://solusikitchen-maks.com/uploads/MESIN-DJ-100..jpg"
+    image: "https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Fruit%20&%20vegetable%20Equipment/grok-image-43f3529b-7b05-4c5d-8d54-baa11b7adcb8.png"
   },
   {
     id: 36,
