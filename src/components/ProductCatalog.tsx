@@ -215,7 +215,7 @@ export const ProductCatalog = () => {
   };
 
   const categories = [
-    "All",
+  "All",
     "FREEZER",
     "DISPLAY COOLER",
     "dispenser refrigerator",
@@ -346,8 +346,8 @@ export const ProductCatalog = () => {
               <div className="w-12 h-[2px] bg-ske-emerald"></div>
               <span className="text-[9px] font-bold uppercase tracking-[0.3em] text-ske-blue">SKE Professional Catalog</span>
             </div>
-            <h1 className="text-3xl md:text-5xl font-black text-ske-dark uppercase leading-none tracking-tight">
-              Marketplace Peralatan<br />Dapur Industrial
+            <h1 className="text-3xl md:text-5xl font-black text-ske-dark leading-none tracking-tight">
+              <span className="text-ske-emerald">OUR</span> Marketplace
             </h1>
           </div>
           
