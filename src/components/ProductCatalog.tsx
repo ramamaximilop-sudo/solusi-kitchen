@@ -164,10 +164,10 @@ export const ProductCatalog = () => {
     "Miscellaneous",
     "Medical Refrigeration",
     "Food & Cooking Equipment",
-    "FOOD and fish equipment",
+    "FOOD and Fish equipment",
     "Fruit and Vegetable Equipment",
     "bar and hotel equipment",
-    "Bakery And Noodle Equipment",
+    "Bakery and Noodle Equipment",
     "PACKAGING MACHINE",
     "Chafing Dish Equipment",
     "Dish Washer Equipment"
