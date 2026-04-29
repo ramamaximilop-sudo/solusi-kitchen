@@ -123,7 +123,7 @@ export const ContactSection = () => {
             className="h-[500px] w-full bg-white border border-gray-300 p-2 rounded-3xl overflow-hidden shadow-xl shadow-ske-dark/5"
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126906.94047683103!2d106.97402633917833!3d-6.230232490333206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698c8597ad35ed%3A0xc622606822c71285!2sBekasi%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1713661234567!5m2!1sen!2sid"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.5828458732007!2d107.0016629!3d-6.2132174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698c8e547379d3%3A0x286395e9df52c5c9!2sBekasi%20Utara%2C%20Kota%20Bks%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1714371234567!5m2!1sid!2sid"
               width="100%"
               height="100%"
               style={{ border: 0 }}
