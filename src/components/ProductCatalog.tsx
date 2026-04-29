@@ -62,6 +62,69 @@ const ProductSkeleton = () => (
   </div>
 );
 
+const ProductCard = ({ 
+  product, 
+  onDetail, 
+  onInquiry, 
+  formatPrice 
+}: { 
+  product: Product; 
+  onDetail: (p: Product) => void; 
+  onInquiry: (p: Product) => void;
+  formatPrice: (p: number) => string;
+  key?: string | number;
+}) => (
+  <motion.div
+    layout
+    initial={{ opacity: 0, scale: 0.9 }}
+    animate={{ opacity: 1, scale: 1 }}
+    exit={{ opacity: 0, scale: 0.9 }}
+    whileHover={{ y: -4, shadow: "0 10px 25px -5px rgba(27, 28, 37, 0.1)" }}
+    transition={{ duration: 0.3, layout: { duration: 0.3 }, opacity: { duration: 0.2 } }}
+    className="bg-white border border-gray-100 flex flex-col group relative transition-premium shadow-sm rounded-lg overflow-hidden h-full"
+  >
+    {/* Brand Badge */}
+    <div className="absolute top-2 right-2 z-10 hidden sm:block">
+      <span className="bg-white/90 backdrop-blur-sm px-1.5 py-0.5 text-[7px] font-black text-ske-blue uppercase tracking-widest border border-gray-100 shadow-sm rounded">
+        {product.brand}
+      </span>
+    </div>
+
+    {/* Image Area */}
+    <div className="aspect-square bg-gray-50 flex items-center justify-center p-6 sm:p-8 overflow-hidden relative">
+      <img 
+        src={product.image} 
+        alt={product.name} 
+        className="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-700" 
+        referrerPolicy="no-referrer" 
+      />
+      <div className="absolute inset-0 bg-ske-dark/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+    </div>
+
+    {/* Content Area */}
+    <div className="p-4 sm:p-6 flex flex-col flex-grow">
+      <div className="text-[9px] sm:text-[11px] font-black text-ske-blue uppercase tracking-widest mb-1 opacity-50">{product.brand}</div>
+      <h3 
+        onClick={() => onDetail(product)} 
+        className="text-xs sm:text-sm font-black text-ske-dark uppercase tracking-tight mb-3 group-hover:text-ske-emerald transition-colors leading-snug cursor-pointer line-clamp-2 min-h-[2.8em]"
+      >
+        {product.name}
+      </h3>
+      <div className="mb-4">
+        <span className="text-sm sm:text-lg font-black text-ske-dark">{formatPrice(product.price)}</span>
+      </div>
+      <button 
+        onClick={() => onInquiry(product)} 
+        className="mt-auto w-full bg-ske-emerald text-white text-[10px] sm:text-[12px] font-black uppercase tracking-widest py-3 sm:py-4 rounded hover:shadow-lg hover:brightness-110 transition-premium flex items-center justify-center gap-1.5 group/btn"
+      >
+        <span className="hidden sm:inline">Tanyakan</span> Stok
+        <ExternalLink size={12} className="group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-premium" />
+      </button>
+    </div>
+    <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ske-dark/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
+  </motion.div>
+);
+
 export const ProductCatalog = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
   const [selectedBrand, setSelectedBrand] = useState<string>("All");
@@ -230,6 +293,22 @@ export const ProductCatalog = () => {
       .map(id => slice.find(p => p.id === id))
       .filter((p): p is Product => p !== undefined);
   }, [filteredProducts, effectivePage]);
+
+  const featuredCategories = useMemo(() => {
+    // Only show featured sections if we are in "All" category and no search/brand filter is active
+    if (selectedCategory !== "All" || searchQuery !== "" || selectedBrand !== "All") return null;
+
+    return categories.filter(cat => cat !== "All").map(catName => {
+      // Find products for this category
+      const items = PRODUCTS.filter(p => p.category === catName).slice(0, 4);
+      return {
+        name: catName,
+        products: items
+      };
+    }).filter(cat => cat.products.length > 0);
+  }, [selectedCategory, searchQuery, selectedBrand, categories]);
+
+  const isFeaturedView = featuredCategories !== null;
 
   const handleInquiryRequest = (product: Product) => {
     setActiveProduct(product);
@@ -465,129 +544,131 @@ export const ProductCatalog = () => {
           {/* Main Content Area */}
           <main className="lg:col-span-3" ref={catalogTopRef}>
             <div className="hidden lg:flex justify-between items-center mb-8 border-b border-gray-300 pb-4">
-               <span className="text-[10px] font-bold text-ske-blue/40 uppercase tracking-[0.2em]">Showing {paginatedProducts.length} of {filteredProducts.length} Results</span>
+               <span className="text-[10px] font-bold text-ske-blue/40 uppercase tracking-[0.2em] uppercase">
+                 {isFeaturedView ? 'Koleksi Unggulan per Kategori' : `Showing ${paginatedProducts.length} of ${filteredProducts.length} Results`}
+               </span>
                <div className="text-[10px] font-bold text-ske-blue uppercase tracking-widest cursor-pointer hover:text-ske-emerald transition-colors flex items-center gap-1 group">
                  Sort By: Newest <ChevronDown size={10} className="group-hover:translate-y-0.5 transition-transform" />
                </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 min-h-[400px]">
-              {isLoading ? (
-                // Show 8 skeletons while loading
-                Array.from({ length: 8 }).map((_, i) => (
+            {isLoading ? (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 min-h-[400px]">
+                {Array.from({ length: 9 }).map((_, i) => (
                   <ProductSkeleton key={`skeleton-${i}`} />
-                ))
-              ) : (
-                <AnimatePresence mode="popLayout" initial={false}>
-                  {paginatedProducts.map((product) => (
-                    <motion.div
-                      layout
-                      key={`${effectivePage}-${product.id}`}
-                      initial={{ opacity: 0, scale: 0.9 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      exit={{ opacity: 0, scale: 0.9 }}
-                      whileHover={{ y: -4, shadow: "0 10px 25px -5px rgba(27, 28, 37, 0.1)" }}
-                      transition={{ 
-                        duration: 0.3,
-                        layout: { duration: 0.3 },
-                        opacity: { duration: 0.2 }
-                      }}
-                      className="bg-white border border-gray-100 flex flex-col group relative transition-premium shadow-sm rounded-lg overflow-hidden"
-                    >
-                      {/* Brand Badge */}
-                      <div className="absolute top-2 right-2 z-10 hidden sm:block">
-                        <span className="bg-white/90 backdrop-blur-sm px-1.5 py-0.5 text-[7px] font-black text-ske-blue uppercase tracking-widest border border-gray-100 shadow-sm rounded">
-                          {product.brand}
-                        </span>
-                      </div>
-
-                    {/* Image Area */}
-                    <div className="aspect-square bg-gray-50 flex items-center justify-center p-6 sm:p-8 overflow-hidden relative">
-                      <img 
-                        src={product.image} 
-                        alt={product.name} 
-                        className="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-700"
-                        referrerPolicy="no-referrer"
-                      />
-                      <div className="absolute inset-0 bg-ske-dark/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                    </div>
-
-                    {/* Content Area */}
-                    <div className="p-4 sm:p-6 flex flex-col flex-grow">
-                      <div className="text-[9px] sm:text-[11px] font-black text-ske-blue uppercase tracking-widest mb-1 opacity-50">{product.brand}</div>
-                      <h3 
-                        onClick={() => handleDetailRequest(product)}
-                        className="text-xs sm:text-sm font-black text-ske-dark uppercase tracking-tight mb-3 group-hover:text-ske-emerald transition-colors leading-snug cursor-pointer line-clamp-2 min-h-[2.8em]"
-                      >
-                        {product.name}
-                      </h3>
-                      
-                      <div className="mb-4">
-                        <span className="text-sm sm:text-lg font-black text-ske-dark">{formatPrice(product.price)}</span>
-                      </div>
-                      
-                      <button 
-                        onClick={() => handleInquiryRequest(product)}
-                        className="mt-auto w-full bg-ske-emerald text-white text-[10px] sm:text-[12px] font-black uppercase tracking-widest py-3 sm:py-4 rounded hover:shadow-lg hover:brightness-110 transition-premium flex items-center justify-center gap-1.5 group/btn"
-                      >
-                        <span className="hidden sm:inline">Tanyakan</span> Stok
-                        <ExternalLink size={12} className="group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-premium" />
-                      </button>
-                    </div>
-
-                      {/* Hover Shadow Enhancement */}
-                      <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ske-dark/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
-                    </motion.div>
-                  ))}
-                </AnimatePresence>
-              )}
-            </div>
-
-            {/* Pagination Controls */}
-            {totalPages > 1 && (
-              <div className="mt-20 flex flex-col items-center gap-8 border-t border-gray-200 pt-10">
-                <div className="flex flex-wrap justify-center items-center gap-4">
-                  <button
-                    onClick={() => handlePageChange(currentPage - 1)}
-                    disabled={currentPage === 1}
-                    className="flex items-center gap-2 px-5 py-3 border border-gray-200 text-[10px] font-black uppercase tracking-widest text-ske-blue disabled:opacity-30 disabled:cursor-not-allowed hover:border-ske-emerald hover:text-ske-emerald transition-premium"
-                  >
-                    <ChevronDown size={14} className="rotate-90" />
-                    Previous
-                  </button>
-                  
-                  <div className="flex items-center gap-1">
-                    {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-                      <button
-                        key={page}
-                        onClick={() => handlePageChange(page)}
-                        className={`w-10 h-10 text-[10px] font-black uppercase tracking-widest transition-premium ${
-                          currentPage === page 
-                            ? 'bg-ske-emerald text-white shadow-lg' 
-                            : 'bg-white text-ske-blue border border-gray-200 hover:border-ske-emerald hover:text-ske-emerald'
-                        }`}
-                      >
-                        {page}
-                      </button>
-                    ))}
-                  </div>
-
-                  <button
-                    onClick={() => handlePageChange(currentPage + 1)}
-                    disabled={currentPage === totalPages}
-                    className="flex items-center gap-2 px-5 py-3 border border-gray-200 text-[10px] font-black uppercase tracking-widest text-ske-blue disabled:opacity-30 disabled:cursor-not-allowed hover:border-ske-emerald hover:text-ske-emerald transition-premium"
-                  >
-                    Next
-                    <ChevronDown size={14} className="-rotate-90" />
-                  </button>
-                </div>
-                <div className="text-[9px] font-bold text-ske-blue/30 uppercase tracking-[0.2em]">
-                  Page {currentPage} of {totalPages}
-                </div>
+                ))}
               </div>
+            ) : isFeaturedView ? (
+              <div className="space-y-20">
+                {featuredCategories.map((catSection) => (
+                  <section key={catSection.name} className="relative">
+                    <div className="flex items-center justify-between mb-8 border-b border-gray-100 pb-4">
+                      <div className="flex items-center gap-4">
+                        <div className="w-1.5 h-8 bg-ske-emerald rounded-full"></div>
+                        <h2 className="text-xl md:text-2xl font-black text-ske-dark uppercase tracking-tight leading-none">
+                          {catSection.name}
+                        </h2>
+                      </div>
+                      <button 
+                        onClick={() => {
+                          setSelectedCategory(catSection.name);
+                          catalogTopRef.current?.scrollIntoView({ behavior: 'smooth' });
+                        }}
+                        className="group flex items-center gap-2 text-[10px] font-black text-ske-emerald uppercase tracking-[0.2em] border border-ske-emerald/20 px-4 py-2 rounded hover:bg-ske-emerald hover:text-white transition-premium"
+                      >
+                        Lihat Semua
+                        <ChevronRight size={14} className="group-hover:translate-x-1 transition-transform" />
+                      </button>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                      {catSection.products.map((product) => (
+                        <ProductCard 
+                          key={product.id} 
+                          product={product} 
+                          onDetail={handleDetailRequest} 
+                          onInquiry={handleInquiryRequest} 
+                          formatPrice={formatPrice} 
+                        />
+                      ))}
+                    </div>
+                  </section>
+                ))}
+              </div>
+            ) : (
+              <>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 min-h-[400px]">
+                  <AnimatePresence mode="popLayout" initial={false}>
+                    {paginatedProducts.map((product) => (
+                      <ProductCard 
+                        key={product.id} 
+                        product={product} 
+                        onDetail={handleDetailRequest} 
+                        onInquiry={handleInquiryRequest} 
+                        formatPrice={formatPrice} 
+                      />
+                    ))}
+                  </AnimatePresence>
+                </div>
+
+                {/* Pagination Controls */}
+                {totalPages > 1 && (
+                  <div className="mt-20 flex flex-col items-center gap-8 border-t border-gray-200 pt-10">
+                    <div className="flex flex-wrap justify-center items-center gap-4">
+                      <button
+                        onClick={() => handlePageChange(currentPage - 1)}
+                        disabled={currentPage === 1}
+                        className="flex items-center gap-2 px-5 py-3 border border-gray-200 text-[10px] font-black uppercase tracking-widest text-ske-blue disabled:opacity-30 disabled:cursor-not-allowed hover:border-ske-emerald hover:text-ske-emerald transition-premium"
+                      >
+                        <ChevronDown size={14} className="rotate-90" />
+                        Previous
+                      </button>
+                      
+                      <div className="flex items-center gap-1">
+                        {Array.from({ length: Math.min(totalPages, 7) }, (_, i) => {
+                          // Simple pagination logic for many pages
+                          let pageNum = i + 1;
+                          if (totalPages > 7) {
+                             if (currentPage > 4) pageNum = currentPage - 3 + i;
+                             if (pageNum > totalPages) pageNum = totalPages - 6 + i;
+                          }
+                          if (pageNum < 1) pageNum = i + 1;
+                          if (pageNum > totalPages) return null;
+                          
+                          return (
+                            <button
+                              key={pageNum}
+                              onClick={() => handlePageChange(pageNum)}
+                              className={`w-10 h-10 text-[10px] font-black uppercase tracking-widest transition-premium ${
+                                currentPage === pageNum 
+                                  ? 'bg-ske-emerald text-white shadow-lg' 
+                                  : 'bg-white text-ske-blue border border-gray-200 hover:border-ske-emerald hover:text-ske-emerald'
+                              }`}
+                            >
+                              {pageNum}
+                            </button>
+                          );
+                        })}
+                      </div>
+
+                      <button
+                        onClick={() => handlePageChange(currentPage + 1)}
+                        disabled={currentPage === totalPages}
+                        className="flex items-center gap-2 px-5 py-3 border border-gray-200 text-[10px] font-black uppercase tracking-widest text-ske-blue disabled:opacity-30 disabled:cursor-not-allowed hover:border-ske-emerald hover:text-ske-emerald transition-premium"
+                      >
+                        Next
+                        <ChevronDown size={14} className="-rotate-90" />
+                      </button>
+                    </div>
+                    <div className="text-[9px] font-bold text-ske-blue/30 uppercase tracking-[0.2em]">
+                      Page {currentPage} of {totalPages}
+                    </div>
+                  </div>
+                )}
+              </>
             )}
 
-            {filteredProducts.length === 0 && (
+            {!isLoading && filteredProducts.length === 0 && (
               <div className="flex flex-col items-center justify-center py-32 text-center">
                 <div className="w-16 h-16 bg-white border border-gray-200 rounded-full flex items-center justify-center mb-6 text-ske-blue/20">
                   <Filter size={32} />
