@@ -162,7 +162,7 @@ export const ProductCatalog = () => {
     "SUPERMARKET EQUIPMENT",
     "COLD ROOM STORAGE",
     "MISCELLANEOUS",
-    "MEDICAL REFRIGERATION",
+    "medical-refrigation",
     "FOOD & COOKING EQUIPMENT",
     "FOOD AND FISH EQUIPMENT",
     "FRUIT AND VEGETABLE EQUIPMENT",
