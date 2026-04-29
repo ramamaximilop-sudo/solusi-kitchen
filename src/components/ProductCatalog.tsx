@@ -58,7 +58,7 @@ export const ProductCatalog = () => {
 
   const brands = ["All", "GEA", "Getra", "Fomac", "Modena", "RSA", "Sansio"];
 
-  // Effect untuk loading state biar gak glitch
+
   useEffect(() => {
     setIsLoading(true);
     const timer = setTimeout(() => {
