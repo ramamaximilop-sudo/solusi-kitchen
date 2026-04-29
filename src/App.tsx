@@ -355,7 +355,7 @@ const HomePage = () => (
 
 export default function App() {
   return (
-    <Router basename="/solusi-kitchen">
+    <Router>
       <ScrollToTop />
       <div className="selection:bg-ske-emerald selection:text-white overflow-x-hidden min-h-screen flex flex-col">
         <Navbar />
