@@ -7,7 +7,7 @@ import { iceCreamProducts } from './categories/ice-cream-equipment';
 import { stainlesskitchenproducts } from './categories/stainless-kitchen';
 import { coldRoomProducts } from './categories/cold-room-storage';
 import { miscellaneousProducts } from './categories/miscellaneous';
-import { medicalProducts } from './categories/medical-refrigation';
+import { medicalProducts } from './categories/medical-refrigeration';
 import { foodCookingProducts } from './categories/food-cooking-equipment';
 import { meatFishProducts } from './categories/meat-fish-equipmennt';
 import { fruitVegetableProducts } from './categories/fruit-vegetable-equipment';
