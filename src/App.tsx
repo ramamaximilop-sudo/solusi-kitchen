@@ -125,7 +125,7 @@ const Hero = () => {
         <div className="hero-bg flex items-center justify-center p-6 md:p-12 bg-ske-bg">
           <div className="w-full h-full border-[10px] md:border-[16px] border-white shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] overflow-hidden relative group aspect-video md:aspect-auto min-h-[300px]">
             <img 
-              src="https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-33eda0de-dfba-446e-9378-830aae8bdcbd.png" 
+              src="https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-1b6104b3-c4e5-417d-99f7-9a1e9c868cfb.png" 
               alt="GETRA Premium Series Vertical Cooler" 
               className="absolute inset-0 w-full h-full object-cover object-center transition-premium group-hover:scale-105 duration-1000"
               referrerPolicy="no-referrer"
