@@ -35,14 +35,82 @@ const FilterSection = ({ title, children, maxHeight }: { title: string; children
   );
 };
 
+const ProductSkeleton = () => (
+  <div className="bg-white border border-gray-100 flex flex-col shadow-sm rounded-lg overflow-hidden animate-pulse h-full">
+    {/* Image Area Skeleton */}
+    <div className="aspect-square bg-gray-50 flex items-center justify-center p-6 relative">
+      <div className="w-2/3 h-2/3 bg-gray-200/50 rounded-lg" />
+    </div>
+    
+    {/* Content Area Skeleton */}
+    <div className="p-3 sm:p-4 flex flex-col flex-grow">
+      {/* Brand Skeleton */}
+      <div className="h-2 w-12 bg-gray-100 rounded mb-2" />
+      
+      {/* Name Skeleton */}
+      <div className="space-y-1.5 mb-4 min-h-[2.4em]">
+        <div className="h-2.5 w-full bg-gray-100 rounded" />
+        <div className="h-2.5 w-4/5 bg-gray-100 rounded" />
+      </div>
+      
+      {/* Price Skeleton */}
+      <div className="h-4 w-20 bg-gray-100 rounded mb-4" />
+      
+      {/* Button Skeleton */}
+      <div className="mt-auto h-9 w-full bg-gray-100 rounded" />
+    </div>
+  </div>
+);
+
 export const ProductCatalog = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
   const [selectedBrand, setSelectedBrand] = useState<string>("All");
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [currentPage, setCurrentPage] = useState(1);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   
   const catalogTopRef = useRef<HTMLDivElement>(null);
+
+  // Scroll tracking for floating button
+  const [isScrolling, setIsScrolling] = useState(false);
+  const scrollTimerRef = useRef<NodeJS.Timeout | null>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (catalogTopRef.current) {
+        const rect = catalogTopRef.current.getBoundingClientRect();
+        // Visible if the product section is in view
+        const isInSection = rect.top < window.innerHeight * 0.9 && rect.bottom > 100;
+
+        if (isInSection) {
+          setIsScrolling(true);
+          if (scrollTimerRef.current) clearTimeout(scrollTimerRef.current);
+          scrollTimerRef.current = setTimeout(() => {
+            setIsScrolling(false);
+          }, 1000);
+        } else {
+          setIsScrolling(false);
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      if (scrollTimerRef.current) clearTimeout(scrollTimerRef.current);
+    };
+  }, []);
+
+  // Simulate data fetching logic
+  useEffect(() => {
+    setIsLoading(true);
+    // If you were fetching from Supabase, you would set isLoading here
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 600); // Faster feedback for filters
+    return () => clearTimeout(timer);
+  }, [selectedCategory, selectedBrand, searchQuery, currentPage]); // Re-trigger on filters AND page changes
 
   // Reset page when filters or search change
   useEffect(() => {
@@ -62,6 +130,19 @@ export const ProductCatalog = () => {
   const [formData, setFormData] = useState({ name: "", address: "", inquiry: "" });
   const [showSuccess, setShowSuccess] = useState(false);
 
+  // Body scroll lock
+  useEffect(() => {
+    const isAnyModalOpen = isDetailModalOpen || isInquiryModalOpen || isFilterOpen;
+    if (isAnyModalOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isDetailModalOpen, isInquiryModalOpen, isFilterOpen]);
+
   const formatPrice = (price: number) => {
     return new Intl.NumberFormat('id-ID', {
       style: 'currency',
@@ -71,7 +152,7 @@ export const ProductCatalog = () => {
   };
 
   const categories = [
-    "All",
+     "All",
     "FREEZER",
     "DISPLAY COOLER",
     "dispenser refrigerator",
@@ -109,19 +190,14 @@ export const ProductCatalog = () => {
     "Modena"
   ];
 
-const filteredProducts = useMemo(() => {
+  const filteredProducts = useMemo(() => {
     return PRODUCTS.filter(p => {
-      const catMatch = selectedCategory === "All" || 
-                       p.category.toLowerCase() === selectedCategory.toLowerCase();
-      
-      const brandMatch = selectedBrand === "All" || 
-                         p.brand.toLowerCase() === selectedBrand.toLowerCase();
-      
+      const catMatch = selectedCategory === "All" || p.category === selectedCategory;
+      const brandMatch = selectedBrand === "All" || p.brand === selectedBrand;
       const searchMatch = searchQuery === "" || 
         p.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
         p.brand.toLowerCase().includes(searchQuery.toLowerCase()) ||
         p.category.toLowerCase().includes(searchQuery.toLowerCase());
-
       return catMatch && brandMatch && searchMatch;
     });
   }, [selectedCategory, selectedBrand, searchQuery]);
@@ -208,73 +284,78 @@ const filteredProducts = useMemo(() => {
           </div>
         </header>
 
-        {/* Mobile Filter Chips & Drawer */}
-        <div className="lg:hidden mb-8 space-y-4">
-          <div className="flex overflow-x-auto pb-4 gap-2 scrollbar-hide">
-            {categories.map((cat) => (
-              <button
-                key={cat}
-                onClick={() => setSelectedCategory(cat)}
-                className={`flex-shrink-0 px-4 py-2 text-[10px] font-black uppercase tracking-widest border transition-all ${
-                  selectedCategory === cat 
-                    ? 'bg-ske-emerald border-ske-emerald text-white shadow-lg' 
-                    : 'bg-white border-gray-200 text-ske-blue/60'
-                }`}
-              >
-                {cat}
-              </button>
-            ))}
-          </div>
-          
-          <div className="flex items-center justify-between">
-            <button 
-              onClick={() => setIsFilterOpen(true)}
-              className="flex items-center gap-2 bg-ske-blue text-white px-4 py-2 text-[10px] font-black uppercase tracking-widest"
+        {/* Floating Category Button (Smart Visibility) */}
+        <AnimatePresence>
+          {isScrolling && !isFilterOpen && (
+            <motion.div
+              initial={{ y: 20, opacity: 0, scale: 0.95 }}
+              animate={{ y: 0, opacity: 1, scale: 1 }}
+              exit={{ y: 10, opacity: 0, scale: 0.95 }}
+              transition={{ duration: 0.3 }}
+              className="fixed bottom-28 right-6 md:right-10 z-[100]"
             >
-              <Filter size={14} /> Brand Filter
-            </button>
-            <span className="text-[10px] font-bold text-ske-blue/40 uppercase tracking-widest">
-              Found {filteredProducts.length} items
-            </span>
-          </div>
+              <button 
+                onClick={() => setIsFilterOpen(true)}
+                className="group flex items-center gap-2 bg-ske-dark/95 backdrop-blur-sm text-white px-4 py-2 rounded-full text-[9px] font-black uppercase tracking-[0.2em] shadow-[0_10px_25px_rgba(0,0,0,0.3)] hover:bg-ske-emerald transition-all active:scale-95 border border-white/10"
+              >
+                <div className="w-1 h-1 bg-ske-emerald rounded-full animate-pulse"></div>
+                CARI KATEGORI
+                <span className="ml-1 pl-2 border-l border-white/20 text-ske-emerald font-bold">
+                  {filteredProducts.length}
+                </span>
+              </button>
+            </motion.div>
+          )}
+        </AnimatePresence>
 
-          <AnimatePresence>
-            {isFilterOpen && (
-              <>
-                <motion.div 
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  onClick={() => setIsFilterOpen(false)}
-                  className="fixed inset-0 bg-ske-dark/60 z-[110] backdrop-blur-sm"
-                />
-                <motion.div
-                  initial={{ x: "100%" }}
-                  animate={{ x: 0 }}
-                  exit={{ x: "100%" }}
-                  transition={{ type: "spring", damping: 25, stiffness: 200 }}
-                  className="fixed right-0 top-0 bottom-0 w-[80%] max-w-[400px] bg-ske-bg z-[120] p-8 overflow-y-auto"
-                >
-                  <div className="flex justify-between items-center mb-10">
-                    <h2 className="text-sm font-black text-ske-blue uppercase tracking-widest">Filter & Brands</h2>
-                    <button onClick={() => setIsFilterOpen(false)} className="text-ske-dark">
-                      <X size={24} />
-                    </button>
+        <AnimatePresence>
+          {isFilterOpen && (
+            <>
+              <motion.div 
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                onClick={() => setIsFilterOpen(false)}
+                className="fixed inset-0 bg-ske-dark/60 z-[110] backdrop-blur-sm"
+              />
+              <motion.div
+                initial={{ x: "-100%" }}
+                animate={{ x: 0 }}
+                exit={{ x: "-100%" }}
+                transition={{ type: "spring", damping: 30, stiffness: 300 }}
+                className="fixed left-0 top-0 bottom-0 w-[85%] max-w-[400px] bg-white z-[120] shadow-2xl flex flex-col"
+              >
+                <div className="p-8 border-b border-gray-100 flex justify-between items-center bg-ske-bg">
+                  <div>
+                    <div className="w-8 h-[2px] bg-ske-emerald mb-2"></div>
+                    <h2 className="text-xs font-black text-ske-blue uppercase tracking-[0.2em]">Navigation</h2>
                   </div>
+                  <button 
+                    onClick={() => setIsFilterOpen(false)} 
+                    className="w-10 h-10 flex items-center justify-center bg-white border border-gray-200 rounded-full text-ske-dark hover:text-ske-emerald transition-colors"
+                  >
+                    <X size={20} />
+                  </button>
+                </div>
 
-                  <div className="space-y-12">
+                <div className="flex-grow overflow-y-auto custom-scrollbar p-8">
+                  <div className="space-y-10">
                     <section>
-                      <h3 className="text-[10px] font-black text-ske-blue uppercase tracking-[0.2em] mb-4 border-b border-gray-300 pb-2">Categories</h3>
-                      <div className="grid grid-cols-1 gap-2">
+                      <h3 className="text-[9px] font-black text-ske-blue/40 uppercase tracking-[0.3em] mb-6 flex items-center gap-2">
+                        <div className="w-1.5 h-1.5 bg-ske-emerald rounded-full"></div>
+                        Select Category
+                      </h3>
+                      <div className="space-y-2">
                         {categories.map((cat) => (
                           <button
                             key={cat}
                             onClick={() => { setSelectedCategory(cat); setIsFilterOpen(false); }}
-                            className={`flex items-center text-left w-full text-[10px] font-bold uppercase tracking-widest py-2 transition-colors ${
-                              selectedCategory === cat ? 'text-ske-emerald' : 'text-ske-blue/60 hover:text-ske-blue'
+                            className={`flex items-center text-left w-full text-[10px] font-black uppercase tracking-widest py-4 px-5 transition-all border-l-4 ${
+                              selectedCategory === cat 
+                                ? 'border-ske-emerald bg-ske-emerald/5 text-ske-emerald shadow-sm' 
+                                : 'border-transparent text-ske-blue/60 hover:bg-gray-50'
                             }`}
                           >
-                            <span className={`flex-shrink-0 w-1.5 h-1.5 rounded-full mr-3 ${selectedCategory === cat ? 'bg-ske-emerald' : 'bg-transparent border border-gray-300'}`}></span>
                             {cat}
                           </button>
                         ))}
@@ -282,28 +363,41 @@ const filteredProducts = useMemo(() => {
                     </section>
 
                     <section>
-                      <h3 className="text-[10px] font-black text-ske-blue uppercase tracking-[0.2em] mb-4 border-b border-gray-300 pb-2">Authorized Brands</h3>
-                      <div className="grid grid-cols-1 gap-2">
+                      <h3 className="text-[9px] font-black text-ske-blue/40 uppercase tracking-[0.3em] mb-6 flex items-center gap-2">
+                        <div className="w-1.5 h-1.5 bg-ske-emerald rounded-full"></div>
+                        Filter by Brand
+                      </h3>
+                      <div className="grid grid-cols-2 gap-2">
                         {brands.map((brand) => (
                           <button
                             key={brand}
                             onClick={() => { setSelectedBrand(brand); setIsFilterOpen(false); }}
-                            className={`flex items-center w-full text-[10px] font-bold uppercase tracking-widest py-2 transition-colors ${
-                              selectedBrand === brand ? 'text-ske-emerald' : 'text-ske-blue/60 hover:text-ske-blue'
+                            className={`flex items-center justify-center text-center w-full text-[9px] font-bold uppercase tracking-widest py-3 px-2 border transition-all ${
+                              selectedBrand === brand 
+                                ? 'bg-ske-blue border-ske-blue text-white shadow-md' 
+                                : 'bg-white border-gray-200 text-ske-blue/60 hover:border-ske-emerald'
                             }`}
                           >
-                            <span className={`w-1.5 h-1.5 rounded-full mr-3 ${selectedBrand === brand ? 'bg-ske-emerald' : 'bg-transparent border border-gray-300'}`}></span>
                             {brand}
                           </button>
                         ))}
                       </div>
                     </section>
                   </div>
-                </motion.div>
-              </>
-            )}
-          </AnimatePresence>
-        </div>
+                </div>
+
+                <div className="p-8 bg-gray-50 border-t border-gray-100">
+                  <button 
+                    onClick={() => { setSelectedCategory("All"); setSelectedBrand("All"); setIsFilterOpen(false); }}
+                    className="w-full bg-white border border-gray-200 text-ske-blue py-4 text-[10px] font-black uppercase tracking-widest hover:border-ske-emerald transition-colors"
+                  >
+                    Reset Filters
+                  </button>
+                </div>
+              </motion.div>
+            </>
+          )}
+        </AnimatePresence>
 
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
           {/* Desktop Sidebar */}
@@ -377,86 +471,76 @@ const filteredProducts = useMemo(() => {
                </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 min-h-[400px]">
-              <AnimatePresence mode="popLayout" initial={false}>
-                {paginatedProducts.map((product) => (
-                  <motion.div
-                    layout
-                    key={`${effectivePage}-${product.id}`}
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    exit={{ opacity: 0, scale: 0.9 }}
-                    whileHover={{ y: -8, shadow: "0 25px 50px -12px rgba(27, 28, 37, 0.15)" }}
-                    transition={{ 
-                      duration: 0.3,
-                      layout: { duration: 0.3 },
-                      opacity: { duration: 0.2 }
-                    }}
-                    className="bg-white border border-gray-200 flex flex-col group relative transition-premium"
-                  >
-                    {/* Brand Badge */}
-                    <div className="absolute top-4 right-4 z-10">
-                      <span className="bg-ske-bg/80 backdrop-blur-sm px-2 py-1 text-[8px] font-black text-ske-blue uppercase tracking-[0.2em] border border-gray-200 shadow-sm">
-                        {product.brand}
-                      </span>
-                    </div>
-
-                    {/* Image Area */}
-                    <div className="aspect-square bg-gray-50 flex items-center justify-center p-8 overflow-hidden relative">
-                      <img 
-                        src={product.image} 
-                        alt={product.name} 
-                        className="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-700"
-                        referrerPolicy="no-referrer"
-                      />
-                      <div className="absolute inset-0 bg-ske-dark/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                    </div>
-
-                    {/* Content Area */}
-                    <div className="p-6 flex flex-col flex-grow">
-                      <div className="text-[10px] font-black text-ske-blue uppercase tracking-[0.3em] mb-1">{product.brand}</div>
-                      <div className="text-[8px] font-bold text-ske-emerald uppercase tracking-[0.3em] mb-4">{product.category}</div>
-                      <h3 
-                        onClick={() => handleDetailRequest(product)}
-                        className="text-sm font-black text-ske-dark uppercase tracking-tight mb-2 group-hover:text-ske-emerald transition-colors leading-snug cursor-pointer"
-                      >
-                        {product.name}
-                      </h3>
-                      
-                      <div className="mb-4">
-                        <span className="text-xl font-black text-ske-dark">{formatPrice(product.price)}</span>
-                        <p className="text-[7px] text-ske-blue/40 font-bold uppercase tracking-widest mt-0.5">*Harga dapat berubah sewaktu-waktu.</p>
-                      </div>
-                      
-                      <div className="space-y-1 mb-8">
-                        {product.specs.capacity && (
-                          <div className="flex justify-between items-center border-b border-gray-100 py-1">
-                            <span className="text-[9px] font-bold text-ske-blue/40 uppercase tracking-widest">Capacity</span>
-                            <span className="text-[9px] font-bold text-ske-dark">{product.specs.capacity}</span>
-                          </div>
-                        )}
-                        {product.specs.wattage && (
-                          <div className="flex justify-between items-center border-b border-gray-100 py-1">
-                            <span className="text-[9px] font-bold text-ske-blue/40 uppercase tracking-widest">Power</span>
-                            <span className="text-[9px] font-bold text-ske-dark">{product.specs.wattage}</span>
-                          </div>
-                        )}
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-6 min-h-[400px]">
+              {isLoading ? (
+                // Show 8 skeletons while loading
+                Array.from({ length: 8 }).map((_, i) => (
+                  <ProductSkeleton key={`skeleton-${i}`} />
+                ))
+              ) : (
+                <AnimatePresence mode="popLayout" initial={false}>
+                  {paginatedProducts.map((product) => (
+                    <motion.div
+                      layout
+                      key={`${effectivePage}-${product.id}`}
+                      initial={{ opacity: 0, scale: 0.9 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      exit={{ opacity: 0, scale: 0.9 }}
+                      whileHover={{ y: -4, shadow: "0 10px 25px -5px rgba(27, 28, 37, 0.1)" }}
+                      transition={{ 
+                        duration: 0.3,
+                        layout: { duration: 0.3 },
+                        opacity: { duration: 0.2 }
+                      }}
+                      className="bg-white border border-gray-100 flex flex-col group relative transition-premium shadow-sm rounded-lg overflow-hidden"
+                    >
+                      {/* Brand Badge */}
+                      <div className="absolute top-2 right-2 z-10 hidden sm:block">
+                        <span className="bg-white/90 backdrop-blur-sm px-1.5 py-0.5 text-[7px] font-black text-ske-blue uppercase tracking-widest border border-gray-100 shadow-sm rounded">
+                          {product.brand}
+                        </span>
                       </div>
 
-                      <button 
-                        onClick={() => handleInquiryRequest(product)}
-                        className="mt-auto w-full bg-ske-emerald text-white text-[10px] font-black uppercase tracking-[0.2em] py-4 hover:shadow-[0_0_20px_rgba(32,106,93,0.4)] hover:brightness-110 transition-premium flex items-center justify-center gap-2 group/btn"
-                      >
-                        Tanyakan Stok
-                        <ExternalLink size={12} className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-premium" />
-                      </button>
-                    </div>
+                      {/* Image Area */}
+                      <div className="aspect-square bg-gray-50 flex items-center justify-center p-4 sm:p-6 overflow-hidden relative">
+                        <img 
+                          src={product.image} 
+                          alt={product.name} 
+                          className="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-700"
+                          referrerPolicy="no-referrer"
+                        />
+                        <div className="absolute inset-0 bg-ske-dark/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                      </div>
 
-                    {/* Hover Shadow Enhancement */}
-                    <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-ske-dark/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
-                  </motion.div>
-                ))}
-              </AnimatePresence>
+                      {/* Content Area */}
+                      <div className="p-3 sm:p-4 flex flex-col flex-grow">
+                        <div className="text-[7px] sm:text-[9px] font-black text-ske-blue uppercase tracking-widest mb-0.5 opacity-50">{product.brand}</div>
+                        <h3 
+                          onClick={() => handleDetailRequest(product)}
+                          className="text-[11px] sm:text-xs font-black text-ske-dark uppercase tracking-tight mb-2 group-hover:text-ske-emerald transition-colors leading-snug cursor-pointer line-clamp-2 min-h-[2.4em]"
+                        >
+                          {product.name}
+                        </h3>
+                        
+                        <div className="mb-3">
+                          <span className="text-xs sm:text-sm font-black text-ske-dark">{formatPrice(product.price)}</span>
+                        </div>
+                        
+                        <button 
+                          onClick={() => handleInquiryRequest(product)}
+                          className="mt-auto w-full bg-ske-emerald text-white text-[8px] sm:text-[10px] font-black uppercase tracking-widest py-2 sm:py-3 rounded hover:shadow-lg hover:brightness-110 transition-premium flex items-center justify-center gap-1 group/btn"
+                        >
+                          <span className="hidden sm:inline">Tanyakan</span> Stok
+                          <ExternalLink size={10} className="group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-premium" />
+                        </button>
+                      </div>
+
+                      {/* Hover Shadow Enhancement */}
+                      <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ske-dark/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
+                    </motion.div>
+                  ))}
+                </AnimatePresence>
+              )}
             </div>
 
             {/* Pagination Controls */}
@@ -537,26 +621,26 @@ const filteredProducts = useMemo(() => {
               initial={{ opacity: 0, scale: 0.95, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
-              className="fixed inset-0 m-auto w-[95%] max-w-[900px] h-fit max-h-[90vh] bg-white z-[160] shadow-2xl flex flex-col md:flex-row overflow-hidden"
+              className="fixed inset-0 m-auto w-[95%] max-w-[950px] h-fit max-h-[92vh] bg-white z-[160] shadow-2xl flex flex-col md:flex-row overflow-y-auto custom-scrollbar rounded-xl"
             >
               {/* Product Image Side */}
-              <div className="w-full md:w-1/2 bg-[#EBECF1] p-10 flex items-center justify-center relative">
+              <div className="w-full md:w-1/2 bg-[#EBECF1] p-6 md:p-10 flex items-center justify-center relative min-h-[300px] md:min-h-full">
                 <img 
                   src={activeProduct.image} 
                   alt={activeProduct.name} 
-                  className="w-full h-full object-contain mix-blend-multiply drop-shadow-2xl" 
+                  className="w-full h-full max-h-[400px] md:max-h-full object-contain mix-blend-multiply drop-shadow-2xl" 
                   referrerPolicy="no-referrer" 
                 />
                 <button 
                   onClick={() => setIsDetailModalOpen(false)}
-                  className="absolute top-6 left-6 md:hidden text-ske-dark"
+                  className="absolute top-6 left-6 md:hidden text-ske-dark bg-white/50 backdrop-blur-sm p-2 rounded-full"
                 >
-                  <X size={24} />
+                  <X size={20} />
                 </button>
               </div>
 
               {/* Product Content Side */}
-              <div className="w-full md:w-1/2 p-10 overflow-y-auto custom-scrollbar bg-white">
+              <div className="w-full md:w-1/2 p-6 md:p-10 bg-white">
                 <div className="hidden md:flex justify-end mb-4">
                   <button onClick={() => setIsDetailModalOpen(false)} className="text-ske-dark hover:text-ske-emerald transition-colors">
                     <X size={24} />
