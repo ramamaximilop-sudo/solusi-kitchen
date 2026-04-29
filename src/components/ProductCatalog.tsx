@@ -160,17 +160,17 @@ export const ProductCatalog = () => {
     "Ice Cream Equipment",
     "stainless-kitchen",
     "SUPERMARKET EQUIPMENT",
-    "COLD ROOM STORAGE",
-    "MISCELLANEOUS",
+    "Cold Room Storage",
+    "Miscellaneous",
     "Medical Refrigeration",
     "Food & Cooking Equipment",
-    "FOOD AND FISH EQUIPMENT",
-    "FRUIT AND VEGETABLE EQUIPMENT",
-    "BAR AND HOTEL EQUIPMENT",
-    "BAKERY AND NOODLE EQUIPMENT",
+    "FOOD and fish equipment",
+    "Fruit and Vegetable Equipment",
+    "bar and hotel equipment",
+    "Bakery And Noodle Equipment",
     "PACKAGING MACHINE",
-    "CHAFING-DISH-EQUIPMENT",
-    "DISH-WASHER-EQUIPMENT"
+    "Chafing Dish Equipment",
+    "Dish Washer Equipment"
   ];
   
   const brands = [
