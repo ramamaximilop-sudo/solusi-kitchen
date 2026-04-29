@@ -1,0 +1,1 @@
+<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 min-h-[400px]">
