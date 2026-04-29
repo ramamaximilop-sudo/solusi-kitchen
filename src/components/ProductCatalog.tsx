@@ -38,26 +38,26 @@ const FilterSection = ({ title, children, maxHeight }: { title: string; children
 const ProductSkeleton = () => (
   <div className="bg-white border border-gray-100 flex flex-col shadow-sm rounded-lg overflow-hidden animate-pulse h-full">
     {/* Image Area Skeleton */}
-    <div className="aspect-square bg-gray-50 flex items-center justify-center p-6 relative">
+    <div className="aspect-square bg-gray-50 flex items-center justify-center p-8 relative">
       <div className="w-2/3 h-2/3 bg-gray-200/50 rounded-lg" />
     </div>
     
     {/* Content Area Skeleton */}
-    <div className="p-3 sm:p-4 flex flex-col flex-grow">
+    <div className="p-4 sm:p-6 flex flex-col flex-grow">
       {/* Brand Skeleton */}
       <div className="h-2 w-12 bg-gray-100 rounded mb-2" />
       
       {/* Name Skeleton */}
-      <div className="space-y-1.5 mb-4 min-h-[2.4em]">
+      <div className="space-y-1.5 mb-4 min-h-[2.8em]">
         <div className="h-2.5 w-full bg-gray-100 rounded" />
         <div className="h-2.5 w-4/5 bg-gray-100 rounded" />
       </div>
       
       {/* Price Skeleton */}
-      <div className="h-4 w-20 bg-gray-100 rounded mb-4" />
+      <div className="h-5 w-24 bg-gray-100 rounded mb-4" />
       
       {/* Button Skeleton */}
-      <div className="mt-auto h-9 w-full bg-gray-100 rounded" />
+      <div className="mt-auto h-12 w-full bg-gray-100 rounded" />
     </div>
   </div>
 );
@@ -152,7 +152,7 @@ export const ProductCatalog = () => {
   };
 
   const categories = [
-     "All",
+    "All",
     "FREEZER",
     "DISPLAY COOLER",
     "dispenser refrigerator",
@@ -471,7 +471,7 @@ export const ProductCatalog = () => {
                </div>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-6 min-h-[400px]">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 min-h-[400px]">
               {isLoading ? (
                 // Show 8 skeletons while loading
                 Array.from({ length: 8 }).map((_, i) => (
@@ -501,39 +501,39 @@ export const ProductCatalog = () => {
                         </span>
                       </div>
 
-                      {/* Image Area */}
-                      <div className="aspect-square bg-gray-50 flex items-center justify-center p-4 sm:p-6 overflow-hidden relative">
-                        <img 
-                          src={product.image} 
-                          alt={product.name} 
-                          className="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-700"
-                          referrerPolicy="no-referrer"
-                        />
-                        <div className="absolute inset-0 bg-ske-dark/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                      </div>
+                    {/* Image Area */}
+                    <div className="aspect-square bg-gray-50 flex items-center justify-center p-6 sm:p-8 overflow-hidden relative">
+                      <img 
+                        src={product.image} 
+                        alt={product.name} 
+                        className="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-700"
+                        referrerPolicy="no-referrer"
+                      />
+                      <div className="absolute inset-0 bg-ske-dark/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
 
-                      {/* Content Area */}
-                      <div className="p-3 sm:p-4 flex flex-col flex-grow">
-                        <div className="text-[7px] sm:text-[9px] font-black text-ske-blue uppercase tracking-widest mb-0.5 opacity-50">{product.brand}</div>
-                        <h3 
-                          onClick={() => handleDetailRequest(product)}
-                          className="text-[11px] sm:text-xs font-black text-ske-dark uppercase tracking-tight mb-2 group-hover:text-ske-emerald transition-colors leading-snug cursor-pointer line-clamp-2 min-h-[2.4em]"
-                        >
-                          {product.name}
-                        </h3>
-                        
-                        <div className="mb-3">
-                          <span className="text-xs sm:text-sm font-black text-ske-dark">{formatPrice(product.price)}</span>
-                        </div>
-                        
-                        <button 
-                          onClick={() => handleInquiryRequest(product)}
-                          className="mt-auto w-full bg-ske-emerald text-white text-[8px] sm:text-[10px] font-black uppercase tracking-widest py-2 sm:py-3 rounded hover:shadow-lg hover:brightness-110 transition-premium flex items-center justify-center gap-1 group/btn"
-                        >
-                          <span className="hidden sm:inline">Tanyakan</span> Stok
-                          <ExternalLink size={10} className="group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-premium" />
-                        </button>
+                    {/* Content Area */}
+                    <div className="p-4 sm:p-6 flex flex-col flex-grow">
+                      <div className="text-[9px] sm:text-[11px] font-black text-ske-blue uppercase tracking-widest mb-1 opacity-50">{product.brand}</div>
+                      <h3 
+                        onClick={() => handleDetailRequest(product)}
+                        className="text-xs sm:text-sm font-black text-ske-dark uppercase tracking-tight mb-3 group-hover:text-ske-emerald transition-colors leading-snug cursor-pointer line-clamp-2 min-h-[2.8em]"
+                      >
+                        {product.name}
+                      </h3>
+                      
+                      <div className="mb-4">
+                        <span className="text-sm sm:text-lg font-black text-ske-dark">{formatPrice(product.price)}</span>
                       </div>
+                      
+                      <button 
+                        onClick={() => handleInquiryRequest(product)}
+                        className="mt-auto w-full bg-ske-emerald text-white text-[10px] sm:text-[12px] font-black uppercase tracking-widest py-3 sm:py-4 rounded hover:shadow-lg hover:brightness-110 transition-premium flex items-center justify-center gap-1.5 group/btn"
+                      >
+                        <span className="hidden sm:inline">Tanyakan</span> Stok
+                        <ExternalLink size={12} className="group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-premium" />
+                      </button>
+                    </div>
 
                       {/* Hover Shadow Enhancement */}
                       <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ske-dark/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
