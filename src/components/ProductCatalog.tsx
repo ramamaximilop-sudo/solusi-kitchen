@@ -169,8 +169,8 @@ export const ProductCatalog = () => {
     "BAR AND HOTEL EQUIPMENT",
     "BAKERY AND NOODLE EQUIPMENT",
     "PACKAGING MACHINE",
-    "CHAFING DISH EQUIPMENT",
-    "DISH WASHER EQUIPMENT"
+    "CHAFING-DISH-EQUIPMENT",
+    "DISH-WASHER-EQUIPMENT"
   ];
   
   const brands = [
