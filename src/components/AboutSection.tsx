@@ -91,7 +91,7 @@ export const AboutSection = () => {
           >
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl bg-ske-bg">
               <div 
-                style={{ backgroundImage: "url('https://images.unsplash.com/photo-1571175432247-41857920ab0b?q=80&w=2400&auto=format&fit=crop')" }}
+                style={{ backgroundImage: "url('https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/grok-image-e59c4c94-f697-4970-bb83-5e0a8567619d.png" }}
                 className="absolute inset-0 w-full h-full bg-cover bg-center grayscale opacity-80"
               ></div>
               <div className="absolute inset-0 bg-ske-blue/40"></div>
