@@ -36,7 +36,7 @@ export const AboutSection = () => {
         style={{ y }}
         className="absolute inset-0 opacity-10 pointer-events-none"
       >
-        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] scale-150"></div>
+        <div className="absolute inset-0 bg-[url('https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Dish%20washer/grok-image-9deb4f16-0046-4d33-b735-ec1d4858b5db.png')] scale-150"></div>
       </motion.div>
 
       <div className="max-w-7xl mx-auto px-10 relative z-10">
