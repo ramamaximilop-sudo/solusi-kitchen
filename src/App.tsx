@@ -192,7 +192,16 @@ const HowItWorks = () => {
 <div className="relative w-full h-32 bg-ske-blue rounded flex items-center justify-center border border-ske-emerald/20 group cursor-pointer overflow-hidden"
                onClick={(e) => {
                  const v = e.currentTarget.querySelector('video');
-                 if(v) v.paused ? v.play() : v.pause();
+                 const overlay = e.currentTarget.querySelector('.play-overlay');
+                 if(v) {
+                   if(v.paused) {
+                     v.play();
+                     overlay?.classList.add('opacity-0');
+                   } else {
+                     v.pause();
+                     overlay?.classList.remove('opacity-0');
+                   }
+                 }
                }}>
             <video 
               src="https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/0430.Mp4" 
@@ -202,10 +211,12 @@ const HowItWorks = () => {
               className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500"
             />
 
-            <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
+            {/* Overlay Ikon Play dengan Animasi */}
+            <div className="play-overlay absolute inset-0 flex items-center justify-center z-10 pointer-events-none transition-all duration-300">
               <div className="w-10 h-10 rounded-full border-2 border-ske-emerald flex items-center justify-center bg-white shadow-lg group-hover:scale-110 transition-premium">
-                {/* Ikon Play Segitiga Manual (Anti Error) */}
-                <div className="w-0 h-0 border-t-[6px] border-t-transparent border-l-[10px] border-l-ske-emerald border-b-[6px] border-b-transparent ml-1"></div>
+                <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg" className="ml-1">
+                  <path d="M1 1L11 7L1 13V1Z" fill="#10B981" stroke="#10B981" strokeWidth="2" strokeLinejoin="round"/>
+                </svg>
               </div>
             </div>
             
