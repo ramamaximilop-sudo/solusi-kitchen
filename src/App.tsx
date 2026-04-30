@@ -144,7 +144,7 @@ const Hero = () => {
             {/* Bottom Content Badges */}
             <div className="absolute bottom-6 left-6 right-6 z-20 flex flex-col items-start gap-2">
               <div className="bg-ske-emerald text-white text-[8px] md:text-[10px] font-black px-4 py-1 uppercase tracking-[0.3em] shadow-lg">
-                SKE WORKSHOP PREVIEW
+                SKE WORK ON MBG PROJECT
               </div>
             </div>
 
