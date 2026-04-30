@@ -189,18 +189,28 @@ const HowItWorks = () => {
             </div>
           </div>
 
-      <div className="relative w-full h-32 bg-ske-blue rounded flex items-center justify-center border border-ske-emerald/20 group cursor-pointer overflow-hidden">
-            {/* VIDEO DARI SUPABASE */}
+<div className="relative w-full h-32 bg-ske-blue rounded flex items-center justify-center border border-ske-emerald/20 group cursor-pointer overflow-hidden">
             <video 
               src="https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/0430.Mp4" 
-              autoPlay 
               loop 
               muted 
               playsInline
+              onMouseEnter={(e) => e.currentTarget.play()}
+              onMouseLeave={(e) => {
+                e.currentTarget.pause();
+                e.currentTarget.currentTime = 0;
+              }}
+              onClick={(e) => {
+                if (e.currentTarget.paused) {
+                  e.currentTarget.play();
+                } else {
+                  e.currentTarget.pause();
+                }
+              }}
               className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500"
             />
 
-            <div className="absolute inset-0 flex items-center justify-center z-10">
+            <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
               <div className="w-10 h-10 rounded-full border-2 border-ske-emerald flex items-center justify-center bg-white shadow-lg group-hover:scale-110 transition-premium">
                 <div className="w-0 h-0 border-t-[6px] border-t-transparent border-l-[10px] border-l-ske-emerald border-b-[6px] border-b-transparent ml-1"></div>
               </div>
