@@ -189,28 +189,32 @@ const HowItWorks = () => {
             </div>
           </div>
 
-        <div className="relative w-full h-32 bg-ske-blue rounded flex items-center justify-center border border-ske-emerald/20 group cursor-pointer overflow-hidden">
-  {/* VIDEO DARI SUPABASE */}
-  <video 
-    src="https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/0430.Mp4" 
-    autoPlay 
-    loop 
-    muted 
-    playsInline
-    className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500"
-  />
+      <div className="relative w-full h-32 bg-ske-blue rounded flex items-center justify-center border border-ske-emerald/20 group cursor-pointer overflow-hidden">
+            {/* VIDEO DARI SUPABASE */}
+            <video 
+              src="https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/0430.Mp4" 
+              autoPlay 
+              loop 
+              muted 
+              playsInline
+              className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500"
+            />
 
-  {/* Overlay Ikon Play & Teks */}
-  <div className="absolute inset-0 flex items-center justify-center z-10">
-    <div className="w-10 h-10 rounded-full border-2 border-ske-emerald flex items-center justify-center bg-white shadow-lg group-hover:scale-110 group-hover:shadow-ske-emerald/20 transition-premium">
-      <div className="w-0 h-0 border-t-[6px] border-t-transparent border-l-[10px] border-l-ske-emerald border-b-[6px] border-b-transparent ml-1"></div>
-    </div>
-  </div>
-  
-  <span className="absolute bottom-2 right-2 text-[8px] font-bold uppercase text-white drop-shadow-md z-10">
-    Workshop Overview
-  </span>
-</div> 
+            <div className="absolute inset-0 flex items-center justify-center z-10">
+              <div className="w-10 h-10 rounded-full border-2 border-ske-emerald flex items-center justify-center bg-white shadow-lg group-hover:scale-110 transition-premium">
+                <div className="w-0 h-0 border-t-[6px] border-t-transparent border-l-[10px] border-l-ske-emerald border-b-[6px] border-b-transparent ml-1"></div>
+              </div>
+            </div>
+            
+            <span className="absolute bottom-2 right-2 text-[8px] font-bold uppercase text-white drop-shadow-md z-10">
+              Workshop Overview
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
           
 const Benefits = () => {
   const benefits = [
