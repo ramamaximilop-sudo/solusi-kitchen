@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Halaman Utama -->
+  <url>
+    <loc>https://solusikitchen-expert.com/</loc>
+    <lastmod>2026-05-01</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Kategori Produk Utama -->
+  <url>
+    <loc>https://solusikitchen-expert.com/category/freezer</loc>
+    <lastmod>2026-05-01</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://solusikitchen-expert.com/category/bakery-equipment</loc>
+    <lastmod>2026-05-01</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://solusikitchen-expert.com/category/cooking-equipment</loc>
+    <lastmod>2026-05-01</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://solusikitchen-expert.com/category/stainless-steel</loc>
+    <lastmod>2026-05-01</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://solusikitchen-expert.com/category/refrigeration</loc>
+    <lastmod>2026-05-01</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Halaman Pendukung -->
+  <url>
+    <loc>https://solusikitchen-expert.com/about</loc>
+    <lastmod>2026-05-01</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://solusikitchen-expert.com/contact</loc>
+    <lastmod>2026-05-01</lastmod>
+    <priority>0.5</priority>
+  </url>
+</urlset>
