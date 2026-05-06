@@ -110,6 +110,7 @@ const Hero = () => {
             </h1>
             <p className="text-sm text-ske-blue mb-10 max-w-md font-medium leading-relaxed">
               Solusi total peralatan dapur industrial untuk restoran, hotel, dan catering. Efisiensi, daya tahan, dan kualitas purna jual terbaik.
+            "Siap Mendukung Program Makan Siang Bergizi. Spesialis Dapur Satuan Pelayanan dengan Sistem SPPG Standar Nasional. Hubungi Kami untuk Konsultasi Tender."
             </p>
             <div>
               <Link 
