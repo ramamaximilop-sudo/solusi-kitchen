@@ -213,7 +213,7 @@ const HowItWorks = () => {
             />
 
             {/* Overlay Ikon Play dengan Animasi */}
-            <div className="play-overlay absolute inset-0 flex items-center justify-center z-10 pointer-events-none transition-all duration-300">
+<div className="play-overlay absolute inset-0 flex items-center justify-center z-10 opacity-100 transition-opacity duration-300">
               <div className="w-10 h-10 rounded-full border-2 border-ske-emerald flex items-center justify-center bg-white shadow-lg group-hover:scale-110 transition-premium">
                 <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg" className="ml-1">
                   <path d="M1 1L11 7L1 13V1Z" fill="#10B981" stroke="#10B981" strokeWidth="2" strokeLinejoin="round"/>
