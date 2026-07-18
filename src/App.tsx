@@ -205,7 +205,7 @@ const HowItWorks = () => {
                  }
                }}>
             <video 
-              src="https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/0430.Mp4" 
+              src="https://yerutlqkfjjcrfqsmupz.supabase.co/storage/v1/object/public/FOTO%20produck/Bakery%20Noodle%20Equipmenr/WhatsApp%20Video%202026-04-30%20at%2009.13.52.mp4" 
               loop 
               muted 
               playsInline
