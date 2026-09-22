@@ -246,7 +246,7 @@ const Benefits = () => {
     {
       icon: <Headset className="w-6 h-6 mb-2 icon-svg" />,
       title: "LAYANAN PURNA JUAL",
-      desc: "Tim teknisi responsif di area Bekasi."
+      desc: "Tim teknisi responsif di area Seluruh Area INDONESIA."
     }
   ];
 
